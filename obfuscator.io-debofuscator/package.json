@@ -1,0 +1,32 @@
+{
+  "name": "obfuscator-io-deobfuscator",
+  "version": "5.0.0",
+  "description": "AST-assisted Node.js deobfuscator focused on javascript-obfuscator / obfuscator.io output",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "obfio-deobfuscate": "src/cli.js"
+  },
+  "scripts": {
+    "deobfuscate": "node src/cli.js",
+    "test": "node testing/run-all.js",
+    "test:regression": "node testing/regression.js",
+    "test:samples": "node testing/sample-suite.js",
+    "test:vm": "node testing/vm-recovery.js",
+    "test:invalid": "node testing/invalid-input.js",
+    "test:shapes": "node testing/recovered-shapes.js",
+    "test:vm-bytecode": "node testing/vm-bytecode.js",
+    "test:beautify": "node testing/beautify.js",
+    "test:vm-cfg": "node testing/vm-cfg.js",
+    "test:large": "node testing/large-regression.js",
+    "test:cli": "node testing/cli-output.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "js-beautify": "^1.15.4"
+  },
+  "license": "MIT"
+}
