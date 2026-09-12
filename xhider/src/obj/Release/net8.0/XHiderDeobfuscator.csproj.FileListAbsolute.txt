@@ -1,0 +1,14 @@
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\bin\Release\net8.0\XHiderDeobfuscator.exe
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\bin\Release\net8.0\XHiderDeobfuscator.deps.json
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\bin\Release\net8.0\XHiderDeobfuscator.runtimeconfig.json
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\bin\Release\net8.0\XHiderDeobfuscator.dll
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\bin\Release\net8.0\XHiderDeobfuscator.pdb
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.AssemblyInfoInputs.cache
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.AssemblyInfo.cs
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.csproj.CoreCompileInputs.cache
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.dll
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\refint\XHiderDeobfuscator.dll
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.pdb
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\XHiderDeobfuscator.genruntimeconfig.cache
+C:\Users\asdf\Desktop\obfusactors\OBSCURA\agartha-stuff\bot\deobf-work\xhider\src\obj\Release\net8.0\ref\XHiderDeobfuscator.dll
