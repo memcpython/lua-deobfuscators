@@ -1,0 +1,20 @@
+{
+  "name": "luaobfuscator-deobfuscator",
+  "version": "0.1.0",
+  "description": "Static JavaScript deobfuscator for common LuaObfuscator.com Lua output.",
+  "type": "module",
+  "bin": {
+    "luaobf-deobf": "./src/cli.js"
+  },
+  "scripts": {
+    "deobf": "node src/cli.js",
+    "test": "node --test",
+    "test:samples": "node src/cli.js samples --out out"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "luaparse": "^0.3.1"
+  }
+}

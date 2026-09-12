@@ -1,0 +1,1757 @@
+-- LuaObfuscator.com VM payload decoded by RevealR
+-- Encoded payload bytes: 30350
+-- Decoded VM chunk bytes: 17219
+
+-- Heuristic recovered source:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"))()
+
+-- VM disassembly:
+-- proto 0: params=0, constants=102, instructions=303, children=23
+-- constants:
+--   [1] "game"
+--   [2] "GetService"
+--   [3] "Players"
+--   [4] "LocalPlayer"
+--   [5] "HttpService"
+--   [6] "RunService"
+--   [7] "Workspace"
+--   [8] "CurrentCamera"
+--   [9] "Lighting"
+--   [10] "UserInputService"
+--   [11] "ReplicatedStorage"
+--   [12] "StarterGui"
+--   [13] "SoundService"
+--   [14] "Debris"
+--   [15] "Unknown"
+--   [16] "N/A"
+--   [17] "typeof"
+--   [18] "identifyexecutor"
+--   [19] "function"
+--   [20] "pcall"
+--   [21] "type"
+--   [22] "string"
+--   [23] "Script Executado"
+--   [24] "format"
+--   [25] "Usu\195\161rio: %s (%d)\nHWID: `%s`\nExecutor: %s %s"
+--   [26] "Name"
+--   [27] "UserId"
+--   [28] "FindFirstChild"
+--   [29] "events"
+--   [30] "plr_examine"
+--   [31] "Destroy"
+--   [32] "loadstring"
+--   [33] "HttpGet"
+--   [34] "https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"
+--   [35] "CreateWindow"
+--   [36] "Cathub.gg"
+--   [37] "LoadingTitle"
+--   [38] "Loading..."
+--   [39] "LoadingSubtitle"
+--   [40] ""
+--   [41] "ConfigurationSaving"
+--   [42] "Enabled"
+--   [43] false
+--   [44] "KeySystem"
+--   [45] true
+--   [46] "KeySettings"
+--   [47] "Title"
+--   [48] "Subtitle"
+--   [49] "Key System"
+--   [50] "Note"
+--   [51] "Join our discord to get the key:https://discord.gg/AN8bpkTR2d "
+--   [52] "FileName"
+--   [53] "TwistedHubKey"
+--   [54] "SaveKey"
+--   [55] "GrabKeyFromSite"
+--   [56] "Key"
+--   [57] "D9xA3kLpZq8VmTsRw4YbF1Jh"
+--   [58] "Callback"
+--   [59] "Discord"
+--   [60] "Invite"
+--   [61] "AN8bpkTR2d"
+--   [62] "RememberJoins"
+--   [63] "CreateTab"
+--   [64] "ESP"
+--   [65] 4483362458
+--   [66] "Movement"
+--   [67] "Visuals"
+--   [68] "Utilities"
+--   [69] 50
+--   [70] "RenderStepped"
+--   [71] "Connect"
+--   [72] "CreateSlider"
+--   [73] "Fly Speed"
+--   [74] "Range"
+--   [75] 10
+--   [76] 500
+--   [77] "Increment"
+--   [78] 5
+--   [79] "Suffix"
+--   [80] "Studs/s"
+--   [81] "CurrentValue"
+--   [82] "CreateKeybind"
+--   [83] "Fly Toggle Keybind"
+--   [84] "CurrentKeybind"
+--   [85] "F"
+--   [86] "HoldToInteract"
+--   [87] "CreateToggle"
+--   [88] "Fullbright"
+--   [89] "WaitForChild"
+--   [90] "storm_related"
+--   [91] "storms"
+--   [92] "CreateDropdown"
+--   [93] "Select Tornado for TP"
+--   [94] "Options"
+--   [95] "CurrentOption"
+--   [96] nil
+--   [97] "ChildAdded"
+--   [98] "ChildRemoved"
+--   [99] "CreateButton"
+--   [100] "Spawn Vehicle (92454SS)"
+--   [101] "Tornado ESP"
+--   [102] "Probe ESP"
+-- instructions:
+--   0001  OP_83  A=0  B="game"  C=_  mode=1  flags=2
+--   0002  OP_97  A=0  B=0  C="GetService"  mode=0  flags=4
+--   0003  OP_65  A=2  B="Players"  C=_  mode=1  flags=2
+--   0004  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_27  A=1  B=0  C="LocalPlayer"  mode=0  flags=4
+--   0006  OP_83  A=2  B="game"  C=_  mode=1  flags=2
+--   0007  OP_97  A=2  B=2  C="GetService"  mode=0  flags=4
+--   0008  OP_65  A=4  B="HttpService"  C=_  mode=1  flags=2
+--   0009  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0010  OP_83  A=3  B="game"  C=_  mode=1  flags=2
+--   0011  OP_97  A=3  B=3  C="GetService"  mode=0  flags=4
+--   0012  OP_65  A=5  B="RunService"  C=_  mode=1  flags=2
+--   0013  OP_81  A=3  B=5  C=2  mode=0  flags=0
+--   0014  OP_83  A=4  B="game"  C=_  mode=1  flags=2
+--   0015  OP_97  A=4  B=4  C="GetService"  mode=0  flags=4
+--   0016  OP_65  A=6  B="Workspace"  C=_  mode=1  flags=2
+--   0017  OP_81  A=4  B=6  C=2  mode=0  flags=0
+--   0018  OP_27  A=5  B=4  C="CurrentCamera"  mode=0  flags=4
+--   0019  OP_83  A=6  B="game"  C=_  mode=1  flags=2
+--   0020  OP_97  A=6  B=6  C="GetService"  mode=0  flags=4
+--   0021  OP_65  A=8  B="Lighting"  C=_  mode=1  flags=2
+--   0022  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0023  OP_83  A=7  B="game"  C=_  mode=1  flags=2
+--   0024  OP_97  A=7  B=7  C="GetService"  mode=0  flags=4
+--   0025  OP_65  A=9  B="UserInputService"  C=_  mode=1  flags=2
+--   0026  OP_81  A=7  B=9  C=2  mode=0  flags=0
+--   0027  OP_83  A=8  B="game"  C=_  mode=1  flags=2
+--   0028  OP_97  A=8  B=8  C="GetService"  mode=0  flags=4
+--   0029  OP_65  A=10  B="ReplicatedStorage"  C=_  mode=1  flags=2
+--   0030  OP_81  A=8  B=10  C=2  mode=0  flags=0
+--   0031  OP_83  A=9  B="game"  C=_  mode=1  flags=2
+--   0032  OP_97  A=9  B=9  C="GetService"  mode=0  flags=4
+--   0033  OP_65  A=11  B="StarterGui"  C=_  mode=1  flags=2
+--   0034  OP_81  A=9  B=11  C=2  mode=0  flags=0
+--   0035  OP_83  A=10  B="game"  C=_  mode=1  flags=2
+--   0036  OP_97  A=10  B=10  C="GetService"  mode=0  flags=4
+--   0037  OP_65  A=12  B="SoundService"  C=_  mode=1  flags=2
+--   0038  OP_81  A=10  B=12  C=2  mode=0  flags=0
+--   0039  OP_83  A=11  B="game"  C=_  mode=1  flags=2
+--   0040  OP_97  A=11  B=11  C="GetService"  mode=0  flags=4
+--   0041  OP_65  A=13  B="Debris"  C=_  mode=1  flags=2
+--   0042  OP_81  A=11  B=13  C=2  mode=0  flags=0
+--   0043  OP_65  A=12  B="Unknown"  C=_  mode=1  flags=2
+--   0044  OP_65  A=13  B="N/A"  C=_  mode=1  flags=2
+--   0045  OP_83  A=14  B="typeof"  C=_  mode=1  flags=2
+--   0046  OP_83  A=15  B="identifyexecutor"  C=_  mode=1  flags=2
+--   0047  OP_08  A=14  B=2  C=2  mode=0  flags=0
+--   0048  OP_104  A=14  B=66  C="function"  mode=3  flags=4
+--   0049  OP_22  A=0  B=66  C=_  mode=2  flags=0
+--   0050  OP_83  A=14  B="pcall"  C=_  mode=1  flags=2
+--   0051  OP_83  A=15  B="identifyexecutor"  C=_  mode=1  flags=2
+--   0052  OP_38  A=14  B=2  C=16  mode=0  flags=0
+--   0053  OP_46  A=14  B=66  C=0  mode=3  flags=0
+--   0054  OP_22  A=0  B=66  C=_  mode=2  flags=0
+--   0055  OP_83  A=17  B="type"  C=_  mode=1  flags=2
+--   0056  OP_47  A=18  B=15  C=0  mode=0  flags=0
+--   0057  OP_08  A=17  B=2  C=2  mode=0  flags=0
+--   0058  OP_104  A=17  B=66  C="string"  mode=3  flags=4
+--   0059  OP_22  A=0  B=66  C=_  mode=2  flags=0
+--   0060  OP_83  A=17  B="type"  C=_  mode=1  flags=2
+--   0061  OP_47  A=18  B=16  C=0  mode=0  flags=0
+--   0062  OP_08  A=17  B=2  C=2  mode=0  flags=0
+--   0063  OP_104  A=17  B=66  C="string"  mode=3  flags=4
+--   0064  OP_22  A=0  B=66  C=_  mode=2  flags=0
+--   0065  OP_47  A=12  B=15  C=0  mode=0  flags=0
+--   0066  OP_47  A=13  B=16  C=0  mode=0  flags=0
+--   0067  OP_61  A=14  B=0  C=_  mode=1  flags=0
+--   0068  OP_09  A=15  B=1  C=1  mode=3  flags=0
+--   0069  OP_14  A=0  B=2  C=0  mode=0  flags=0
+--   0070  OP_47  A=16  B=15  C=0  mode=0  flags=0
+--   0071  OP_65  A=17  B="Script Executado"  C=_  mode=1  flags=2
+--   0072  OP_83  A=18  B="string"  C=_  mode=1  flags=2
+--   0073  OP_27  A=18  B=18  C="format"  mode=0  flags=4
+--   0074  OP_65  A=19  B="Usu\195\161rio: %s (%d)\nHWID: `%s`\nExecutor: %s %s"  C=_  mode=1  flags=2
+--   0075  OP_27  A=20  B=1  C="Name"  mode=0  flags=4
+--   0076  OP_27  A=21  B=1  C="UserId"  mode=0  flags=4
+--   0077  OP_47  A=22  B=14  C=0  mode=0  flags=0
+--   0078  OP_89  A=22  B=1  C=2  mode=0  flags=0
+--   0079  OP_47  A=23  B=12  C=0  mode=0  flags=0
+--   0080  OP_47  A=24  B=13  C=0  mode=0  flags=0
+--   0081  OP_100  A=18  B=24  C=0  mode=0  flags=0
+--   0082  OP_70  A=16  B=0  C=1  mode=0  flags=0
+--   0083  OP_09  A=16  B=2  C=5  mode=3  flags=0
+--   0084  OP_14  A=0  B=15  C=0  mode=0  flags=0
+--   0085  OP_14  A=0  B=1  C=0  mode=0  flags=0
+--   0086  OP_14  A=0  B=14  C=0  mode=0  flags=0
+--   0087  OP_14  A=0  B=12  C=0  mode=0  flags=0
+--   0088  OP_14  A=0  B=13  C=0  mode=0  flags=0
+--   0089  OP_97  A=17  B=8  C="FindFirstChild"  mode=0  flags=4
+--   0090  OP_65  A=19  B="events"  C=_  mode=1  flags=2
+--   0091  OP_81  A=17  B=19  C=2  mode=0  flags=0
+--   0092  OP_46  A=17  B=100  C=0  mode=3  flags=0
+--   0093  OP_22  A=0  B=100  C=_  mode=2  flags=0
+--   0094  OP_97  A=18  B=17  C="FindFirstChild"  mode=0  flags=4
+--   0095  OP_65  A=20  B="plr_examine"  C=_  mode=1  flags=2
+--   0096  OP_81  A=18  B=20  C=2  mode=0  flags=0
+--   0097  OP_46  A=18  B=100  C=0  mode=3  flags=0
+--   0098  OP_22  A=0  B=100  C=_  mode=2  flags=0
+--   0099  OP_97  A=19  B=18  C="Destroy"  mode=0  flags=4
+--   0100  OP_52  A=19  B=2  C=1  mode=0  flags=0
+--   0101  OP_83  A=18  B="loadstring"  C=_  mode=1  flags=2
+--   0102  OP_83  A=19  B="game"  C=_  mode=1  flags=2
+--   0103  OP_97  A=19  B=19  C="HttpGet"  mode=0  flags=4
+--   0104  OP_65  A=21  B="https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"  C=_  mode=1  flags=2
+--   0105  OP_100  A=19  B=21  C=0  mode=0  flags=0
+--   0106  OP_10  A=18  B=0  C=2  mode=0  flags=0
+--   0107  OP_89  A=18  B=1  C=2  mode=0  flags=0
+--   0108  OP_97  A=19  B=18  C="CreateWindow"  mode=0  flags=4
+--   0109  OP_13  A=21  B=0  C=7  mode=0  flags=0
+--   0110  OP_02  A=21  B="Name"  C="Cathub.gg"  mode=0  flags=6
+--   0111  OP_02  A=21  B="LoadingTitle"  C="Loading..."  mode=0  flags=6
+--   0112  OP_02  A=21  B="LoadingSubtitle"  C=""  mode=0  flags=6
+--   0113  OP_13  A=22  B=0  C=1  mode=0  flags=0
+--   0114  OP_02  A=22  B="Enabled"  C=false  mode=0  flags=6
+--   0115  OP_34  A=21  B="ConfigurationSaving"  C=22  mode=0  flags=2
+--   0116  OP_02  A=21  B="KeySystem"  C=true  mode=0  flags=6
+--   0117  OP_13  A=22  B=0  C=8  mode=0  flags=0
+--   0118  OP_02  A=22  B="Title"  C="Cathub.gg"  mode=0  flags=6
+--   0119  OP_02  A=22  B="Subtitle"  C="Key System"  mode=0  flags=6
+--   0120  OP_02  A=22  B="Note"  C="Join our discord to get the key:https://discord.gg/AN8bpkTR2d "  mode=0  flags=6
+--   0121  OP_02  A=22  B="FileName"  C="TwistedHubKey"  mode=0  flags=6
+--   0122  OP_02  A=22  B="SaveKey"  C=true  mode=0  flags=6
+--   0123  OP_02  A=22  B="GrabKeyFromSite"  C=false  mode=0  flags=6
+--   0124  OP_13  A=23  B=1  C=0  mode=0  flags=0
+--   0125  OP_65  A=24  B="D9xA3kLpZq8VmTsRw4YbF1Jh"  C=_  mode=1  flags=2
+--   0126  OP_42  A=23  B=1  C=1  mode=0  flags=0
+--   0127  OP_34  A=22  B="Key"  C=23  mode=0  flags=2
+--   0128  OP_09  A=23  B=3  C=1  mode=3  flags=0
+--   0129  OP_14  A=0  B=16  C=0  mode=0  flags=0
+--   0130  OP_34  A=22  B="Callback"  C=23  mode=0  flags=2
+--   0131  OP_34  A=21  B="KeySettings"  C=22  mode=0  flags=2
+--   0132  OP_13  A=22  B=0  C=3  mode=0  flags=0
+--   0133  OP_02  A=22  B="Enabled"  C=true  mode=0  flags=6
+--   0134  OP_02  A=22  B="Invite"  C="AN8bpkTR2d"  mode=0  flags=6
+--   0135  OP_02  A=22  B="RememberJoins"  C=true  mode=0  flags=6
+--   0136  OP_34  A=21  B="Discord"  C=22  mode=0  flags=2
+--   0137  OP_81  A=19  B=21  C=2  mode=0  flags=0
+--   0138  OP_97  A=20  B=19  C="CreateTab"  mode=0  flags=4
+--   0139  OP_65  A=22  B="ESP"  C=_  mode=1  flags=2
+--   0140  OP_65  A=23  B=4483362458  C=_  mode=1  flags=2
+--   0141  OP_81  A=20  B=23  C=2  mode=0  flags=0
+--   0142  OP_97  A=21  B=19  C="CreateTab"  mode=0  flags=4
+--   0143  OP_65  A=23  B="Movement"  C=_  mode=1  flags=2
+--   0144  OP_65  A=24  B=4483362458  C=_  mode=1  flags=2
+--   0145  OP_81  A=21  B=24  C=2  mode=0  flags=0
+--   0146  OP_97  A=22  B=19  C="CreateTab"  mode=0  flags=4
+--   0147  OP_65  A=24  B="Visuals"  C=_  mode=1  flags=2
+--   0148  OP_65  A=25  B=4483362458  C=_  mode=1  flags=2
+--   0149  OP_81  A=22  B=25  C=2  mode=0  flags=0
+--   0150  OP_97  A=23  B=19  C="CreateTab"  mode=0  flags=4
+--   0151  OP_65  A=25  B="Utilities"  C=_  mode=1  flags=2
+--   0152  OP_65  A=26  B=4483362458  C=_  mode=1  flags=2
+--   0153  OP_81  A=23  B=26  C=2  mode=0  flags=0
+--   0154  OP_23  A=24  B=0  C=0  mode=0  flags=0
+--   0155  OP_23  A=25  B=0  C=0  mode=0  flags=0
+--   0156  OP_36  A=26  B=26  C=0  mode=0  flags=0
+--   0157  OP_23  A=27  B=0  C=0  mode=0  flags=0
+--   0158  OP_23  A=28  B=0  C=0  mode=0  flags=0
+--   0159  OP_65  A=29  B=50  C=_  mode=1  flags=2
+--   0160  OP_36  A=30  B=32  C=0  mode=0  flags=0
+--   0161  OP_13  A=33  B=0  C=0  mode=0  flags=0
+--   0162  OP_13  A=34  B=0  C=0  mode=0  flags=0
+--   0163  OP_13  A=35  B=0  C=0  mode=0  flags=0
+--   0164  OP_61  A=36  B=4  C=_  mode=1  flags=0
+--   0165  OP_61  A=37  B=5  C=_  mode=1  flags=0
+--   0166  OP_61  A=38  B=6  C=_  mode=1  flags=0
+--   0167  OP_09  A=39  B=7  C=3  mode=3  flags=0
+--   0168  OP_14  A=0  B=9  C=0  mode=0  flags=0
+--   0169  OP_14  A=0  B=10  C=0  mode=0  flags=0
+--   0170  OP_14  A=0  B=11  C=0  mode=0  flags=0
+--   0171  OP_09  A=40  B=8  C=1  mode=3  flags=0
+--   0172  OP_14  A=0  B=33  C=0  mode=0  flags=0
+--   0173  OP_09  A=41  B=9  C=6  mode=3  flags=0
+--   0174  OP_14  A=0  B=4  C=0  mode=0  flags=0
+--   0175  OP_14  A=0  B=35  C=0  mode=0  flags=0
+--   0176  OP_14  A=0  B=33  C=0  mode=0  flags=0
+--   0177  OP_14  A=0  B=39  C=0  mode=0  flags=0
+--   0178  OP_14  A=0  B=36  C=0  mode=0  flags=0
+--   0179  OP_14  A=0  B=37  C=0  mode=0  flags=0
+--   0180  OP_09  A=42  B=10  C=1  mode=3  flags=0
+--   0181  OP_14  A=0  B=34  C=0  mode=0  flags=0
+--   0182  OP_09  A=43  B=11  C=4  mode=3  flags=0
+--   0183  OP_14  A=0  B=4  C=0  mode=0  flags=0
+--   0184  OP_14  A=0  B=34  C=0  mode=0  flags=0
+--   0185  OP_14  A=0  B=1  C=0  mode=0  flags=0
+--   0186  OP_14  A=0  B=38  C=0  mode=0  flags=0
+--   0187  OP_27  A=44  B=3  C="RenderStepped"  mode=0  flags=4
+--   0188  OP_97  A=44  B=44  C="Connect"  mode=0  flags=4
+--   0189  OP_09  A=46  B=12  C=11  mode=3  flags=0
+--   0190  OP_14  A=0  B=24  C=0  mode=0  flags=0
+--   0191  OP_14  A=0  B=25  C=0  mode=0  flags=0
+--   0192  OP_14  A=0  B=40  C=0  mode=0  flags=0
+--   0193  OP_14  A=0  B=42  C=0  mode=0  flags=0
+--   0194  OP_14  A=0  B=35  C=0  mode=0  flags=0
+--   0195  OP_14  A=0  B=1  C=0  mode=0  flags=0
+--   0196  OP_14  A=0  B=41  C=0  mode=0  flags=0
+--   0197  OP_14  A=0  B=43  C=0  mode=0  flags=0
+--   0198  OP_14  A=0  B=33  C=0  mode=0  flags=0
+--   0199  OP_14  A=0  B=5  C=0  mode=0  flags=0
+--   0200  OP_14  A=0  B=34  C=0  mode=0  flags=0
+--   0201  OP_91  A=44  B=46  C=1  mode=0  flags=0
+--   0202  OP_97  A=44  B=21  C="CreateSlider"  mode=0  flags=4
+--   0203  OP_13  A=46  B=0  C=6  mode=0  flags=0
+--   0204  OP_02  A=46  B="Name"  C="Fly Speed"  mode=0  flags=6
+--   0205  OP_13  A=47  B=2  C=0  mode=0  flags=0
+--   0206  OP_65  A=48  B=10  C=_  mode=1  flags=2
+--   0207  OP_65  A=49  B=500  C=_  mode=1  flags=2
+--   0208  OP_42  A=47  B=2  C=1  mode=0  flags=0
+--   0209  OP_34  A=46  B="Range"  C=47  mode=0  flags=2
+--   0210  OP_02  A=46  B="Increment"  C=5  mode=0  flags=6
+--   0211  OP_02  A=46  B="Suffix"  C="Studs/s"  mode=0  flags=6
+--   0212  OP_34  A=46  B="CurrentValue"  C=29  mode=0  flags=2
+--   0213  OP_09  A=47  B=13  C=1  mode=3  flags=0
+--   0214  OP_14  A=0  B=29  C=0  mode=0  flags=0
+--   0215  OP_34  A=46  B="Callback"  C=47  mode=0  flags=2
+--   0216  OP_91  A=44  B=46  C=1  mode=0  flags=0
+--   0217  OP_09  A=44  B=14  C=9  mode=3  flags=0
+--   0218  OP_14  A=0  B=28  C=0  mode=0  flags=0
+--   0219  OP_14  A=0  B=1  C=0  mode=0  flags=0
+--   0220  OP_14  A=0  B=31  C=0  mode=0  flags=0
+--   0221  OP_14  A=0  B=32  C=0  mode=0  flags=0
+--   0222  OP_14  A=0  B=30  C=0  mode=0  flags=0
+--   0223  OP_14  A=0  B=3  C=0  mode=0  flags=0
+--   0224  OP_14  A=0  B=7  C=0  mode=0  flags=0
+--   0225  OP_14  A=0  B=5  C=0  mode=0  flags=0
+--   0226  OP_14  A=0  B=29  C=0  mode=0  flags=0
+--   0227  OP_97  A=45  B=21  C="CreateKeybind"  mode=0  flags=4
+--   0228  OP_13  A=47  B=0  C=4  mode=0  flags=0
+--   0229  OP_02  A=47  B="Name"  C="Fly Toggle Keybind"  mode=0  flags=6
+--   0230  OP_02  A=47  B="CurrentKeybind"  C="F"  mode=0  flags=6
+--   0231  OP_02  A=47  B="HoldToInteract"  C=false  mode=0  flags=6
+--   0232  OP_34  A=47  B="Callback"  C=44  mode=0  flags=2
+--   0233  OP_91  A=45  B=47  C=1  mode=0  flags=0
+--   0234  OP_97  A=45  B=22  C="CreateToggle"  mode=0  flags=4
+--   0235  OP_13  A=47  B=0  C=3  mode=0  flags=0
+--   0236  OP_02  A=47  B="Name"  C="Fullbright"  mode=0  flags=6
+--   0237  OP_02  A=47  B="CurrentValue"  C=false  mode=0  flags=6
+--   0238  OP_09  A=48  B=15  C=4  mode=3  flags=0
+--   0239  OP_14  A=0  B=27  C=0  mode=0  flags=0
+--   0240  OP_14  A=0  B=26  C=0  mode=0  flags=0
+--   0241  OP_14  A=0  B=3  C=0  mode=0  flags=0
+--   0242  OP_14  A=0  B=6  C=0  mode=0  flags=0
+--   0243  OP_34  A=47  B="Callback"  C=48  mode=0  flags=2
+--   0244  OP_91  A=45  B=47  C=1  mode=0  flags=0
+--   0245  OP_97  A=45  B=4  C="WaitForChild"  mode=0  flags=4
+--   0246  OP_65  A=47  B="storm_related"  C=_  mode=1  flags=2
+--   0247  OP_81  A=45  B=47  C=2  mode=0  flags=0
+--   0248  OP_97  A=45  B=45  C="WaitForChild"  mode=0  flags=4
+--   0249  OP_65  A=47  B="storms"  C=_  mode=1  flags=2
+--   0250  OP_81  A=45  B=47  C=2  mode=0  flags=0
+--   0251  OP_09  A=46  B=16  C=1  mode=3  flags=0
+--   0252  OP_14  A=0  B=45  C=0  mode=0  flags=0
+--   0253  OP_09  A=47  B=17  C=2  mode=3  flags=0
+--   0254  OP_14  A=0  B=45  C=0  mode=0  flags=0
+--   0255  OP_14  A=0  B=1  C=0  mode=0  flags=0
+--   0256  OP_97  A=48  B=23  C="CreateDropdown"  mode=0  flags=4
+--   0257  OP_13  A=50  B=0  C=4  mode=0  flags=0
+--   0258  OP_02  A=50  B="Name"  C="Select Tornado for TP"  mode=0  flags=6
+--   0259  OP_47  A=51  B=46  C=0  mode=0  flags=0
+--   0260  OP_89  A=51  B=1  C=2  mode=0  flags=0
+--   0261  OP_34  A=50  B="Options"  C=51  mode=0  flags=2
+--   0262  OP_02  A=50  B="CurrentOption"  C=_  mode=0  flags=6
+--   0263  OP_34  A=50  B="Callback"  C=47  mode=0  flags=2
+--   0264  OP_81  A=48  B=50  C=2  mode=0  flags=0
+--   0265  OP_27  A=49  B=45  C="ChildAdded"  mode=0  flags=4
+--   0266  OP_97  A=49  B=49  C="Connect"  mode=0  flags=4
+--   0267  OP_09  A=51  B=18  C=2  mode=3  flags=0
+--   0268  OP_14  A=0  B=48  C=0  mode=0  flags=0
+--   0269  OP_14  A=0  B=46  C=0  mode=0  flags=0
+--   0270  OP_91  A=49  B=51  C=1  mode=0  flags=0
+--   0271  OP_27  A=49  B=45  C="ChildRemoved"  mode=0  flags=4
+--   0272  OP_97  A=49  B=49  C="Connect"  mode=0  flags=4
+--   0273  OP_09  A=51  B=19  C=2  mode=3  flags=0
+--   0274  OP_14  A=0  B=48  C=0  mode=0  flags=0
+--   0275  OP_14  A=0  B=46  C=0  mode=0  flags=0
+--   0276  OP_91  A=49  B=51  C=1  mode=0  flags=0
+--   0277  OP_97  A=49  B=23  C="CreateButton"  mode=0  flags=4
+--   0278  OP_13  A=51  B=0  C=2  mode=0  flags=0
+--   0279  OP_02  A=51  B="Name"  C="Spawn Vehicle (92454SS)"  mode=0  flags=6
+--   0280  OP_09  A=52  B=20  C=1  mode=3  flags=0
+--   0281  OP_14  A=0  B=8  C=0  mode=0  flags=0
+--   0282  OP_34  A=51  B="Callback"  C=52  mode=0  flags=2
+--   0283  OP_91  A=49  B=51  C=1  mode=0  flags=0
+--   0284  OP_97  A=49  B=20  C="CreateToggle"  mode=0  flags=4
+--   0285  OP_13  A=51  B=0  C=3  mode=0  flags=0
+--   0286  OP_02  A=51  B="Name"  C="Tornado ESP"  mode=0  flags=6
+--   0287  OP_02  A=51  B="CurrentValue"  C=false  mode=0  flags=6
+--   0288  OP_09  A=52  B=21  C=3  mode=3  flags=0
+--   0289  OP_14  A=0  B=24  C=0  mode=0  flags=0
+--   0290  OP_14  A=0  B=40  C=0  mode=0  flags=0
+--   0291  OP_14  A=0  B=35  C=0  mode=0  flags=0
+--   0292  OP_34  A=51  B="Callback"  C=52  mode=0  flags=2
+--   0293  OP_91  A=49  B=51  C=1  mode=0  flags=0
+--   0294  OP_97  A=49  B=20  C="CreateToggle"  mode=0  flags=4
+--   0295  OP_13  A=51  B=0  C=3  mode=0  flags=0
+--   0296  OP_02  A=51  B="Name"  C="Probe ESP"  mode=0  flags=6
+--   0297  OP_02  A=51  B="CurrentValue"  C=false  mode=0  flags=6
+--   0298  OP_09  A=52  B=22  C=2  mode=3  flags=0
+--   0299  OP_14  A=0  B=25  C=0  mode=0  flags=0
+--   0300  OP_14  A=0  B=42  C=0  mode=0  flags=0
+--   0301  OP_34  A=51  B="Callback"  C=52  mode=0  flags=2
+--   0302  OP_91  A=49  B=51  C=1  mode=0  flags=0
+--   0303  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.0: params=0, constants=4, instructions=12, children=0
+-- constants:
+--   [1] "typeof"
+--   [2] "gethwid"
+--   [3] "function"
+--   [4] "N/A"
+-- instructions:
+--   0001  OP_83  A=0  B="typeof"  C=_  mode=1  flags=2
+--   0002  OP_83  A=1  B="gethwid"  C=_  mode=1  flags=2
+--   0003  OP_08  A=0  B=2  C=2  mode=0  flags=0
+--   0004  OP_104  A=0  B=9  C="function"  mode=3  flags=4
+--   0005  OP_22  A=0  B=9  C=_  mode=2  flags=0
+--   0006  OP_83  A=0  B="gethwid"  C=_  mode=1  flags=2
+--   0007  OP_92  A=0  B=1  C=0  mode=0  flags=0
+--   0008  OP_80  A=0  B=0  C=0  mode=0  flags=0
+--   0009  OP_22  A=0  B=11  C=_  mode=2  flags=0
+--   0010  OP_65  A=0  B="N/A"  C=_  mode=1  flags=2
+--   0011  OP_11  A=0  B=2  C=0  mode=0  flags=0
+--   0012  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.1: params=3, constants=12, instructions=34, children=1
+-- constants:
+--   [1] "https://discord.com/api/webhooks/1386168815628451900/RtZ78dG9ghbR4EdrihtR3iYWvvqPJT5ICYygzaKqdMoQQoVBeZTIYZ0T7aKt4qZu89s1"
+--   [2] "content"
+--   [3] ""
+--   [4] "embeds"
+--   [5] "title"
+--   [6] "description"
+--   [7] "color"
+--   [8] 65280
+--   [9] "request"
+--   [10] "http_request"
+--   [11] "syn"
+--   [12] "pcall"
+-- instructions:
+--   0001  OP_65  A=3  B="https://discord.com/api/webhooks/1386168815628451900/RtZ78dG9ghbR4EdrihtR3iYWvvqPJT5ICYygzaKqdMoQQoVBeZTIYZ0T7aKt4qZu89s1"  C=_  mode=1  flags=2
+--   0002  OP_13  A=4  B=0  C=2  mode=0  flags=0
+--   0003  OP_02  A=4  B="content"  C=""  mode=0  flags=6
+--   0004  OP_13  A=5  B=1  C=0  mode=0  flags=0
+--   0005  OP_13  A=6  B=0  C=3  mode=0  flags=0
+--   0006  OP_34  A=6  B="title"  C=0  mode=0  flags=2
+--   0007  OP_34  A=6  B="description"  C=1  mode=0  flags=2
+--   0008  OP_67  A=7  B=10  C=2  mode=3  flags=0
+--   0009  OP_22  A=0  B=10  C=_  mode=2  flags=0
+--   0010  OP_65  A=7  B=65280  C=_  mode=1  flags=2
+--   0011  OP_34  A=6  B="color"  C=7  mode=0  flags=2
+--   0012  OP_42  A=5  B=1  C=1  mode=0  flags=0
+--   0013  OP_34  A=4  B="embeds"  C=5  mode=0  flags=2
+--   0014  OP_83  A=5  B="request"  C=_  mode=1  flags=2
+--   0015  OP_05  A=5  B=24  C=1  mode=3  flags=0
+--   0016  OP_22  A=0  B=24  C=_  mode=2  flags=0
+--   0017  OP_83  A=5  B="http_request"  C=_  mode=1  flags=2
+--   0018  OP_05  A=5  B=24  C=1  mode=3  flags=0
+--   0019  OP_22  A=0  B=24  C=_  mode=2  flags=0
+--   0020  OP_83  A=5  B="syn"  C=_  mode=1  flags=2
+--   0021  OP_46  A=5  B=24  C=0  mode=3  flags=0
+--   0022  OP_22  A=0  B=24  C=_  mode=2  flags=0
+--   0023  OP_83  A=5  B="syn"  C=_  mode=1  flags=2
+--   0024  OP_27  A=5  B=5  C="request"  mode=0  flags=4
+--   0025  OP_46  A=5  B=33  C=0  mode=3  flags=0
+--   0026  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0027  OP_83  A=6  B="pcall"  C=_  mode=1  flags=2
+--   0028  OP_09  A=7  B=0  C=4  mode=3  flags=0
+--   0029  OP_14  A=0  B=5  C=0  mode=0  flags=0
+--   0030  OP_14  A=0  B=3  C=0  mode=0  flags=0
+--   0031  OP_72  A=0  B=0  C=0  mode=0  flags=0
+--   0032  OP_14  A=0  B=4  C=0  mode=0  flags=0
+--   0033  OP_52  A=6  B=2  C=1  mode=0  flags=0
+--   0034  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.1.0: params=0, constants=8, instructions=15, children=0
+-- constants:
+--   [1] "Url"
+--   [2] "Method"
+--   [3] "POST"
+--   [4] "Headers"
+--   [5] "Content-Type"
+--   [6] "application/json"
+--   [7] "Body"
+--   [8] "JSONEncode"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_13  A=1  B=0  C=4  mode=0  flags=0
+--   0003  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0004  OP_34  A=1  B="Url"  C=2  mode=0  flags=2
+--   0005  OP_02  A=1  B="Method"  C="POST"  mode=0  flags=6
+--   0006  OP_13  A=2  B=0  C=1  mode=0  flags=0
+--   0007  OP_02  A=2  B="Content-Type"  C="application/json"  mode=0  flags=6
+--   0008  OP_34  A=1  B="Headers"  C=2  mode=0  flags=2
+--   0009  OP_26  A=2  B=2  C=0  mode=0  flags=0
+--   0010  OP_97  A=2  B=2  C="JSONEncode"  mode=0  flags=4
+--   0011  OP_26  A=4  B=3  C=0  mode=0  flags=0
+--   0012  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0013  OP_34  A=1  B="Body"  C=2  mode=0  flags=2
+--   0014  OP_52  A=0  B=2  C=1  mode=0  flags=0
+--   0015  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.2: params=1, constants=7, instructions=18, children=0
+-- constants:
+--   [1] "Key V\195\161lida Usada"
+--   [2] "string"
+--   [3] "format"
+--   [4] "Usu\195\161rio: %s (%d)\nKey: `%s`\nHWID: `%s`\nExecutor: %s %s"
+--   [5] "Name"
+--   [6] "UserId"
+--   [7] 16776960
+-- instructions:
+--   0001  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0002  OP_65  A=2  B="Key V\195\161lida Usada"  C=_  mode=1  flags=2
+--   0003  OP_83  A=3  B="string"  C=_  mode=1  flags=2
+--   0004  OP_27  A=3  B=3  C="format"  mode=0  flags=4
+--   0005  OP_65  A=4  B="Usu\195\161rio: %s (%d)\nKey: `%s`\nHWID: `%s`\nExecutor: %s %s"  C=_  mode=1  flags=2
+--   0006  OP_26  A=5  B=1  C=0  mode=0  flags=0
+--   0007  OP_27  A=5  B=5  C="Name"  mode=0  flags=4
+--   0008  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0009  OP_27  A=6  B=6  C="UserId"  mode=0  flags=4
+--   0010  OP_47  A=7  B=0  C=0  mode=0  flags=0
+--   0011  OP_26  A=8  B=2  C=0  mode=0  flags=0
+--   0012  OP_89  A=8  B=1  C=2  mode=0  flags=0
+--   0013  OP_26  A=9  B=3  C=0  mode=0  flags=0
+--   0014  OP_26  A=10  B=4  C=0  mode=0  flags=0
+--   0015  OP_81  A=3  B=10  C=2  mode=0  flags=0
+--   0016  OP_65  A=4  B=16776960  C=_  mode=1  flags=2
+--   0017  OP_91  A=1  B=4  C=1  mode=0  flags=0
+--   0018  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.3: params=1, constants=0, instructions=4, children=0
+-- instructions:
+--   0001  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0002  OP_47  A=2  B=0  C=0  mode=0  flags=0
+--   0003  OP_52  A=1  B=2  C=1  mode=0  flags=0
+--   0004  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.4: params=0, constants=14, instructions=17, children=0
+-- constants:
+--   [1] "Drawing"
+--   [2] "new"
+--   [3] "Text"
+--   [4] "Size"
+--   [5] 16
+--   [6] "Center"
+--   [7] true
+--   [8] "Outline"
+--   [9] "Visible"
+--   [10] "Color"
+--   [11] "Color3"
+--   [12] "fromRGB"
+--   [13] 0
+--   [14] 255
+-- instructions:
+--   0001  OP_83  A=0  B="Drawing"  C=_  mode=1  flags=2
+--   0002  OP_27  A=0  B=0  C="new"  mode=0  flags=4
+--   0003  OP_65  A=1  B="Text"  C=_  mode=1  flags=2
+--   0004  OP_08  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_02  A=0  B="Size"  C=16  mode=0  flags=6
+--   0006  OP_02  A=0  B="Center"  C=true  mode=0  flags=6
+--   0007  OP_02  A=0  B="Outline"  C=true  mode=0  flags=6
+--   0008  OP_02  A=0  B="Visible"  C=true  mode=0  flags=6
+--   0009  OP_83  A=1  B="Color3"  C=_  mode=1  flags=2
+--   0010  OP_27  A=1  B=1  C="fromRGB"  mode=0  flags=4
+--   0011  OP_65  A=2  B=0  C=_  mode=1  flags=2
+--   0012  OP_65  A=3  B=255  C=_  mode=1  flags=2
+--   0013  OP_65  A=4  B=255  C=_  mode=1  flags=2
+--   0014  OP_81  A=1  B=4  C=2  mode=0  flags=0
+--   0015  OP_34  A=0  B="Color"  C=1  mode=0  flags=2
+--   0016  OP_11  A=0  B=2  C=0  mode=0  flags=0
+--   0017  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.5: params=0, constants=16, instructions=17, children=0
+-- constants:
+--   [1] "Drawing"
+--   [2] "new"
+--   [3] "Square"
+--   [4] "Thickness"
+--   [5] 2
+--   [6] "Filled"
+--   [7] false
+--   [8] "Transparency"
+--   [9] 1
+--   [10] "Color"
+--   [11] "Color3"
+--   [12] "fromRGB"
+--   [13] 255
+--   [14] 100
+--   [15] "Visible"
+--   [16] true
+-- instructions:
+--   0001  OP_83  A=0  B="Drawing"  C=_  mode=1  flags=2
+--   0002  OP_27  A=0  B=0  C="new"  mode=0  flags=4
+--   0003  OP_65  A=1  B="Square"  C=_  mode=1  flags=2
+--   0004  OP_08  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_02  A=0  B="Thickness"  C=2  mode=0  flags=6
+--   0006  OP_02  A=0  B="Filled"  C=false  mode=0  flags=6
+--   0007  OP_02  A=0  B="Transparency"  C=1  mode=0  flags=6
+--   0008  OP_83  A=1  B="Color3"  C=_  mode=1  flags=2
+--   0009  OP_27  A=1  B=1  C="fromRGB"  mode=0  flags=4
+--   0010  OP_65  A=2  B=255  C=_  mode=1  flags=2
+--   0011  OP_65  A=3  B=100  C=_  mode=1  flags=2
+--   0012  OP_65  A=4  B=100  C=_  mode=1  flags=2
+--   0013  OP_81  A=1  B=4  C=2  mode=0  flags=0
+--   0014  OP_34  A=0  B="Color"  C=1  mode=0  flags=2
+--   0015  OP_02  A=0  B="Visible"  C=true  mode=0  flags=6
+--   0016  OP_11  A=0  B=2  C=0  mode=0  flags=0
+--   0017  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.6: params=0, constants=14, instructions=17, children=0
+-- constants:
+--   [1] "Drawing"
+--   [2] "new"
+--   [3] "Text"
+--   [4] "Size"
+--   [5] 14
+--   [6] "Center"
+--   [7] true
+--   [8] "Outline"
+--   [9] "Visible"
+--   [10] "Color"
+--   [11] "Color3"
+--   [12] "fromRGB"
+--   [13] 0
+--   [14] 255
+-- instructions:
+--   0001  OP_83  A=0  B="Drawing"  C=_  mode=1  flags=2
+--   0002  OP_27  A=0  B=0  C="new"  mode=0  flags=4
+--   0003  OP_65  A=1  B="Text"  C=_  mode=1  flags=2
+--   0004  OP_08  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_02  A=0  B="Size"  C=14  mode=0  flags=6
+--   0006  OP_02  A=0  B="Center"  C=true  mode=0  flags=6
+--   0007  OP_02  A=0  B="Outline"  C=true  mode=0  flags=6
+--   0008  OP_02  A=0  B="Visible"  C=true  mode=0  flags=6
+--   0009  OP_83  A=1  B="Color3"  C=_  mode=1  flags=2
+--   0010  OP_27  A=1  B=1  C="fromRGB"  mode=0  flags=4
+--   0011  OP_65  A=2  B=0  C=_  mode=1  flags=2
+--   0012  OP_65  A=3  B=255  C=_  mode=1  flags=2
+--   0013  OP_65  A=4  B=0  C=_  mode=1  flags=2
+--   0014  OP_81  A=1  B=4  C=2  mode=0  flags=0
+--   0015  OP_34  A=0  B="Color"  C=1  mode=0  flags=2
+--   0016  OP_11  A=0  B=2  C=0  mode=0  flags=0
+--   0017  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.7: params=1, constants=18, instructions=27, children=0
+-- constants:
+--   [1] "SetCore"
+--   [2] "SendNotification"
+--   [3] "Title"
+--   [4] "New Tornado"
+--   [5] "Text"
+--   [6] " appeared!"
+--   [7] "Duration"
+--   [8] 5
+--   [9] "Instance"
+--   [10] "new"
+--   [11] "Sound"
+--   [12] "SoundId"
+--   [13] "rbxassetid://9118823101"
+--   [14] "Volume"
+--   [15] 1
+--   [16] "Parent"
+--   [17] "Play"
+--   [18] "AddItem"
+-- instructions:
+--   0001  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=1  B=1  C="SetCore"  mode=0  flags=4
+--   0003  OP_65  A=3  B="SendNotification"  C=_  mode=1  flags=2
+--   0004  OP_13  A=4  B=0  C=3  mode=0  flags=0
+--   0005  OP_02  A=4  B="Title"  C="New Tornado"  mode=0  flags=6
+--   0006  OP_47  A=5  B=0  C=0  mode=0  flags=0
+--   0007  OP_65  A=6  B=" appeared!"  C=_  mode=1  flags=2
+--   0008  OP_21  A=5  B=5  C=6  mode=0  flags=0
+--   0009  OP_34  A=4  B="Text"  C=5  mode=0  flags=2
+--   0010  OP_02  A=4  B="Duration"  C=5  mode=0  flags=6
+--   0011  OP_91  A=1  B=4  C=1  mode=0  flags=0
+--   0012  OP_83  A=1  B="Instance"  C=_  mode=1  flags=2
+--   0013  OP_27  A=1  B=1  C="new"  mode=0  flags=4
+--   0014  OP_65  A=2  B="Sound"  C=_  mode=1  flags=2
+--   0015  OP_08  A=1  B=2  C=2  mode=0  flags=0
+--   0016  OP_02  A=1  B="SoundId"  C="rbxassetid://9118823101"  mode=0  flags=6
+--   0017  OP_02  A=1  B="Volume"  C=1  mode=0  flags=6
+--   0018  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0019  OP_34  A=1  B="Parent"  C=2  mode=0  flags=2
+--   0020  OP_97  A=2  B=1  C="Play"  mode=0  flags=4
+--   0021  OP_52  A=2  B=2  C=1  mode=0  flags=0
+--   0022  OP_26  A=2  B=2  C=0  mode=0  flags=0
+--   0023  OP_97  A=2  B=2  C="AddItem"  mode=0  flags=4
+--   0024  OP_47  A=4  B=1  C=0  mode=0  flags=0
+--   0025  OP_65  A=5  B=5  C=_  mode=1  flags=2
+--   0026  OP_91  A=2  B=5  C=1  mode=0  flags=0
+--   0027  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.8: params=0, constants=5, instructions=30, children=0
+-- constants:
+--   [1] "pairs"
+--   [2] "Text"
+--   [3] "Remove"
+--   [4] "TornadoParts"
+--   [5] "Cham"
+-- instructions:
+--   0001  OP_83  A=0  B="pairs"  C=_  mode=1  flags=2
+--   0002  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0003  OP_38  A=0  B=2  C=2  mode=0  flags=0
+--   0004  OP_22  A=0  B=25  C=_  mode=2  flags=0
+--   0005  OP_27  A=5  B=4  C="Text"  mode=0  flags=4
+--   0006  OP_46  A=5  B=10  C=0  mode=3  flags=0
+--   0007  OP_22  A=0  B=10  C=_  mode=2  flags=0
+--   0008  OP_27  A=5  B=4  C="Text"  mode=0  flags=4
+--   0009  OP_97  A=5  B=5  C="Remove"  mode=0  flags=4
+--   0010  OP_52  A=5  B=2  C=1  mode=0  flags=0
+--   0011  OP_83  A=5  B="pairs"  C=_  mode=1  flags=2
+--   0012  OP_27  A=6  B=4  C="TornadoParts"  mode=0  flags=4
+--   0013  OP_05  A=6  B=15  C=1  mode=3  flags=0
+--   0014  OP_22  A=0  B=15  C=_  mode=2  flags=0
+--   0015  OP_13  A=6  B=0  C=0  mode=0  flags=0
+--   0016  OP_38  A=5  B=2  C=7  mode=0  flags=0
+--   0017  OP_22  A=0  B=23  C=_  mode=2  flags=0
+--   0018  OP_27  A=10  B=9  C="Cham"  mode=0  flags=4
+--   0019  OP_46  A=10  B=23  C=0  mode=3  flags=0
+--   0020  OP_22  A=0  B=23  C=_  mode=2  flags=0
+--   0021  OP_27  A=10  B=9  C="Cham"  mode=0  flags=4
+--   0022  OP_97  A=10  B=10  C="Remove"  mode=0  flags=4
+--   0023  OP_52  A=10  B=2  C=1  mode=0  flags=0
+--   0024  OP_50  A=5  B=17  C=2  mode=3  flags=0
+--   0025  OP_22  A=0  B=17  C=_  mode=2  flags=0
+--   0026  OP_50  A=0  B=4  C=2  mode=3  flags=0
+--   0027  OP_22  A=0  B=4  C=_  mode=2  flags=0
+--   0028  OP_13  A=0  B=0  C=0  mode=0  flags=0
+--   0029  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0030  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.9: params=0, constants=23, instructions=156, children=0
+-- constants:
+--   [1] "FindFirstChild"
+--   [2] "storm_related"
+--   [3] "storms"
+--   [4] "pairs"
+--   [5] "Parent"
+--   [6] nil
+--   [7] "Part"
+--   [8] "rotation"
+--   [9] "Text"
+--   [10] "Remove"
+--   [11] "TornadoParts"
+--   [12] "Cham"
+--   [13] "ipairs"
+--   [14] "GetChildren"
+--   [15] "IsA"
+--   [16] "Model"
+--   [17] "configs"
+--   [18] "tornado"
+--   [19] true
+--   [20] "Name"
+--   [21] "BasePart"
+--   [22] "table"
+--   [23] "insert"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=0  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0003  OP_65  A=2  B="storm_related"  C=_  mode=1  flags=2
+--   0004  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_46  A=0  B=11  C=0  mode=3  flags=0
+--   0006  OP_22  A=0  B=11  C=_  mode=2  flags=0
+--   0007  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0008  OP_27  A=0  B=0  C="storm_related"  mode=0  flags=4
+--   0009  OP_97  A=0  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0010  OP_65  A=2  B="storms"  C=_  mode=1  flags=2
+--   0011  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0012  OP_05  A=0  B=14  C=1  mode=3  flags=0
+--   0013  OP_22  A=0  B=14  C=_  mode=2  flags=0
+--   0014  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0015  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0016  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0017  OP_38  A=1  B=2  C=3  mode=0  flags=0
+--   0018  OP_22  A=0  B=62  C=_  mode=2  flags=0
+--   0019  OP_27  A=6  B=4  C="Parent"  mode=0  flags=4
+--   0020  OP_05  A=6  B=62  C=1  mode=3  flags=0
+--   0021  OP_22  A=0  B=62  C=_  mode=2  flags=0
+--   0022  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0023  OP_62  A=6  B=4  C=_  mode=0  flags=4
+--   0024  OP_83  A=6  B="pairs"  C=_  mode=1  flags=2
+--   0025  OP_26  A=7  B=2  C=0  mode=0  flags=0
+--   0026  OP_38  A=6  B=2  C=8  mode=0  flags=0
+--   0027  OP_22  A=0  B=60  C=_  mode=2  flags=0
+--   0028  OP_27  A=11  B=10  C="Part"  mode=0  flags=4
+--   0029  OP_97  A=12  B=4  C="FindFirstChild"  mode=0  flags=4
+--   0030  OP_65  A=14  B="rotation"  C=_  mode=1  flags=2
+--   0031  OP_81  A=12  B=14  C=2  mode=0  flags=0
+--   0032  OP_86  A=11  B=60  C=12  mode=3  flags=0
+--   0033  OP_22  A=0  B=60  C=_  mode=2  flags=0
+--   0034  OP_27  A=11  B=10  C="Part"  mode=0  flags=4
+--   0035  OP_27  A=11  B=11  C="Parent"  mode=0  flags=4
+--   0036  OP_104  A=11  B=60  C=_  mode=3  flags=4
+--   0037  OP_22  A=0  B=60  C=_  mode=2  flags=0
+--   0038  OP_27  A=11  B=10  C="Text"  mode=0  flags=4
+--   0039  OP_46  A=11  B=43  C=0  mode=3  flags=0
+--   0040  OP_22  A=0  B=43  C=_  mode=2  flags=0
+--   0041  OP_27  A=11  B=10  C="Text"  mode=0  flags=4
+--   0042  OP_97  A=11  B=11  C="Remove"  mode=0  flags=4
+--   0043  OP_52  A=11  B=2  C=1  mode=0  flags=0
+--   0044  OP_83  A=11  B="pairs"  C=_  mode=1  flags=2
+--   0045  OP_27  A=12  B=10  C="TornadoParts"  mode=0  flags=4
+--   0046  OP_05  A=12  B=48  C=1  mode=3  flags=0
+--   0047  OP_22  A=0  B=48  C=_  mode=2  flags=0
+--   0048  OP_13  A=12  B=0  C=0  mode=0  flags=0
+--   0049  OP_38  A=11  B=2  C=13  mode=0  flags=0
+--   0050  OP_22  A=0  B=56  C=_  mode=2  flags=0
+--   0051  OP_27  A=16  B=15  C="Cham"  mode=0  flags=4
+--   0052  OP_46  A=16  B=56  C=0  mode=3  flags=0
+--   0053  OP_22  A=0  B=56  C=_  mode=2  flags=0
+--   0054  OP_27  A=16  B=15  C="Cham"  mode=0  flags=4
+--   0055  OP_97  A=16  B=16  C="Remove"  mode=0  flags=4
+--   0056  OP_52  A=16  B=2  C=1  mode=0  flags=0
+--   0057  OP_50  A=11  B=50  C=2  mode=3  flags=0
+--   0058  OP_22  A=0  B=50  C=_  mode=2  flags=0
+--   0059  OP_26  A=11  B=2  C=0  mode=0  flags=0
+--   0060  OP_62  A=11  B=9  C=_  mode=0  flags=4
+--   0061  OP_50  A=6  B=27  C=2  mode=3  flags=0
+--   0062  OP_22  A=0  B=27  C=_  mode=2  flags=0
+--   0063  OP_50  A=1  B=18  C=2  mode=3  flags=0
+--   0064  OP_22  A=0  B=18  C=_  mode=2  flags=0
+--   0065  OP_83  A=1  B="ipairs"  C=_  mode=1  flags=2
+--   0066  OP_97  A=2  B=0  C="GetChildren"  mode=0  flags=4
+--   0067  OP_17  A=2  B=3  C=0  mode=0  flags=0
+--   0068  OP_20  A=1  B=0  C=3  mode=0  flags=0
+--   0069  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0070  OP_97  A=6  B=5  C="IsA"  mode=0  flags=4
+--   0071  OP_65  A=8  B="Model"  C=_  mode=1  flags=2
+--   0072  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0073  OP_46  A=6  B=153  C=0  mode=3  flags=0
+--   0074  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0075  OP_97  A=6  B=5  C="FindFirstChild"  mode=0  flags=4
+--   0076  OP_65  A=8  B="rotation"  C=_  mode=1  flags=2
+--   0077  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0078  OP_46  A=6  B=153  C=0  mode=3  flags=0
+--   0079  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0080  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0081  OP_74  A=6  B=6  C=5  mode=0  flags=0
+--   0082  OP_05  A=6  B=153  C=1  mode=3  flags=0
+--   0083  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0084  OP_97  A=6  B=5  C="FindFirstChild"  mode=0  flags=4
+--   0085  OP_65  A=8  B="configs"  C=_  mode=1  flags=2
+--   0086  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0087  OP_46  A=6  B=92  C=0  mode=3  flags=0
+--   0088  OP_22  A=0  B=92  C=_  mode=2  flags=0
+--   0089  OP_27  A=6  B=5  C="configs"  mode=0  flags=4
+--   0090  OP_97  A=6  B=6  C="FindFirstChild"  mode=0  flags=4
+--   0091  OP_65  A=8  B="tornado"  C=_  mode=1  flags=2
+--   0092  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0093  OP_46  A=6  B=153  C=0  mode=3  flags=0
+--   0094  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0095  OP_26  A=7  B=1  C=0  mode=0  flags=0
+--   0096  OP_62  A=7  B=5  C=true  mode=0  flags=4
+--   0097  OP_26  A=7  B=3  C=0  mode=0  flags=0
+--   0098  OP_27  A=8  B=5  C="Name"  mode=0  flags=4
+--   0099  OP_52  A=7  B=2  C=1  mode=0  flags=0
+--   0100  OP_97  A=7  B=5  C="FindFirstChild"  mode=0  flags=4
+--   0101  OP_65  A=9  B="rotation"  C=_  mode=1  flags=2
+--   0102  OP_81  A=7  B=9  C=2  mode=0  flags=0
+--   0103  OP_36  A=8  B=8  C=0  mode=0  flags=0
+--   0104  OP_83  A=9  B="pairs"  C=_  mode=1  flags=2
+--   0105  OP_97  A=10  B=7  C="GetChildren"  mode=0  flags=4
+--   0106  OP_17  A=10  B=11  C=0  mode=0  flags=0
+--   0107  OP_20  A=9  B=0  C=11  mode=0  flags=0
+--   0108  OP_22  A=0  B=115  C=_  mode=2  flags=0
+--   0109  OP_97  A=14  B=13  C="IsA"  mode=0  flags=4
+--   0110  OP_65  A=16  B="BasePart"  C=_  mode=1  flags=2
+--   0111  OP_81  A=14  B=16  C=2  mode=0  flags=0
+--   0112  OP_46  A=14  B=115  C=0  mode=3  flags=0
+--   0113  OP_22  A=0  B=115  C=_  mode=2  flags=0
+--   0114  OP_47  A=8  B=13  C=0  mode=0  flags=0
+--   0115  OP_22  A=0  B=117  C=_  mode=2  flags=0
+--   0116  OP_50  A=9  B=108  C=2  mode=3  flags=0
+--   0117  OP_22  A=0  B=108  C=_  mode=2  flags=0
+--   0118  OP_46  A=8  B=153  C=0  mode=3  flags=0
+--   0119  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0120  OP_26  A=9  B=2  C=0  mode=0  flags=0
+--   0121  OP_74  A=9  B=9  C=8  mode=0  flags=0
+--   0122  OP_05  A=9  B=153  C=1  mode=3  flags=0
+--   0123  OP_22  A=0  B=153  C=_  mode=2  flags=0
+--   0124  OP_13  A=9  B=0  C=3  mode=0  flags=0
+--   0125  OP_34  A=9  B="Part"  C=8  mode=0  flags=2
+--   0126  OP_26  A=10  B=4  C=0  mode=0  flags=0
+--   0127  OP_89  A=10  B=1  C=2  mode=0  flags=0
+--   0128  OP_34  A=9  B="Text"  C=10  mode=0  flags=2
+--   0129  OP_13  A=10  B=0  C=0  mode=0  flags=0
+--   0130  OP_34  A=9  B="TornadoParts"  C=10  mode=0  flags=2
+--   0131  OP_83  A=10  B="pairs"  C=_  mode=1  flags=2
+--   0132  OP_97  A=11  B=7  C="GetChildren"  mode=0  flags=4
+--   0133  OP_17  A=11  B=12  C=0  mode=0  flags=0
+--   0134  OP_20  A=10  B=0  C=12  mode=0  flags=0
+--   0135  OP_22  A=0  B=149  C=_  mode=2  flags=0
+--   0136  OP_97  A=15  B=14  C="IsA"  mode=0  flags=4
+--   0137  OP_65  A=17  B="BasePart"  C=_  mode=1  flags=2
+--   0138  OP_81  A=15  B=17  C=2  mode=0  flags=0
+--   0139  OP_46  A=15  B=149  C=0  mode=3  flags=0
+--   0140  OP_22  A=0  B=149  C=_  mode=2  flags=0
+--   0141  OP_26  A=15  B=5  C=0  mode=0  flags=0
+--   0142  OP_89  A=15  B=1  C=2  mode=0  flags=0
+--   0143  OP_83  A=16  B="table"  C=_  mode=1  flags=2
+--   0144  OP_27  A=16  B=16  C="insert"  mode=0  flags=4
+--   0145  OP_27  A=17  B=9  C="TornadoParts"  mode=0  flags=4
+--   0146  OP_13  A=18  B=0  C=2  mode=0  flags=0
+--   0147  OP_34  A=18  B="Part"  C=14  mode=0  flags=2
+--   0148  OP_34  A=18  B="Cham"  C=15  mode=0  flags=2
+--   0149  OP_91  A=16  B=18  C=1  mode=0  flags=0
+--   0150  OP_50  A=10  B=135  C=2  mode=3  flags=0
+--   0151  OP_22  A=0  B=135  C=_  mode=2  flags=0
+--   0152  OP_26  A=10  B=2  C=0  mode=0  flags=0
+--   0153  OP_102  A=10  B=8  C=9  mode=0  flags=0
+--   0154  OP_50  A=1  B=69  C=2  mode=3  flags=0
+--   0155  OP_22  A=0  B=69  C=_  mode=2  flags=0
+--   0156  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.10: params=0, constants=3, instructions=15, children=0
+-- constants:
+--   [1] "pairs"
+--   [2] "Text"
+--   [3] "Remove"
+-- instructions:
+--   0001  OP_83  A=0  B="pairs"  C=_  mode=1  flags=2
+--   0002  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0003  OP_38  A=0  B=2  C=2  mode=0  flags=0
+--   0004  OP_22  A=0  B=10  C=_  mode=2  flags=0
+--   0005  OP_27  A=5  B=4  C="Text"  mode=0  flags=4
+--   0006  OP_46  A=5  B=10  C=0  mode=3  flags=0
+--   0007  OP_22  A=0  B=10  C=_  mode=2  flags=0
+--   0008  OP_27  A=5  B=4  C="Text"  mode=0  flags=4
+--   0009  OP_97  A=5  B=5  C="Remove"  mode=0  flags=4
+--   0010  OP_52  A=5  B=2  C=1  mode=0  flags=0
+--   0011  OP_50  A=0  B=4  C=2  mode=3  flags=0
+--   0012  OP_22  A=0  B=4  C=_  mode=2  flags=0
+--   0013  OP_13  A=0  B=0  C=0  mode=0  flags=0
+--   0014  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0015  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.11: params=0, constants=14, instructions=71, children=0
+-- constants:
+--   [1] "FindFirstChild"
+--   [2] "player_related"
+--   [3] "probes"
+--   [4] "pairs"
+--   [5] "Parent"
+--   [6] nil
+--   [7] "Name"
+--   [8] "tostring"
+--   [9] "UserId"
+--   [10] "Text"
+--   [11] "Remove"
+--   [12] "GetChildren"
+--   [13] "IsA"
+--   [14] "Model"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=0  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0003  OP_65  A=2  B="player_related"  C=_  mode=1  flags=2
+--   0004  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_46  A=0  B=11  C=0  mode=3  flags=0
+--   0006  OP_22  A=0  B=11  C=_  mode=2  flags=0
+--   0007  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0008  OP_27  A=0  B=0  C="player_related"  mode=0  flags=4
+--   0009  OP_97  A=0  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0010  OP_65  A=2  B="probes"  C=_  mode=1  flags=2
+--   0011  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0012  OP_05  A=0  B=14  C=1  mode=3  flags=0
+--   0013  OP_22  A=0  B=14  C=_  mode=2  flags=0
+--   0014  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0015  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0016  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0017  OP_38  A=1  B=2  C=3  mode=0  flags=0
+--   0018  OP_22  A=0  B=38  C=_  mode=2  flags=0
+--   0019  OP_46  A=4  B=30  C=0  mode=3  flags=0
+--   0020  OP_22  A=0  B=30  C=_  mode=2  flags=0
+--   0021  OP_27  A=6  B=4  C="Parent"  mode=0  flags=4
+--   0022  OP_85  A=6  B=30  C=_  mode=3  flags=4
+--   0023  OP_22  A=0  B=30  C=_  mode=2  flags=0
+--   0024  OP_27  A=6  B=4  C="Name"  mode=0  flags=4
+--   0025  OP_83  A=7  B="tostring"  C=_  mode=1  flags=2
+--   0026  OP_26  A=8  B=2  C=0  mode=0  flags=0
+--   0027  OP_27  A=8  B=8  C="UserId"  mode=0  flags=4
+--   0028  OP_08  A=7  B=2  C=2  mode=0  flags=0
+--   0029  OP_63  A=6  B=38  C=7  mode=3  flags=0
+--   0030  OP_22  A=0  B=38  C=_  mode=2  flags=0
+--   0031  OP_27  A=6  B=5  C="Text"  mode=0  flags=4
+--   0032  OP_46  A=6  B=36  C=0  mode=3  flags=0
+--   0033  OP_22  A=0  B=36  C=_  mode=2  flags=0
+--   0034  OP_27  A=6  B=5  C="Text"  mode=0  flags=4
+--   0035  OP_97  A=6  B=6  C="Remove"  mode=0  flags=4
+--   0036  OP_52  A=6  B=2  C=1  mode=0  flags=0
+--   0037  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0038  OP_62  A=6  B=4  C=_  mode=0  flags=4
+--   0039  OP_50  A=1  B=18  C=2  mode=3  flags=0
+--   0040  OP_22  A=0  B=18  C=_  mode=2  flags=0
+--   0041  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0042  OP_97  A=2  B=0  C="GetChildren"  mode=0  flags=4
+--   0043  OP_17  A=2  B=3  C=0  mode=0  flags=0
+--   0044  OP_20  A=1  B=0  C=3  mode=0  flags=0
+--   0045  OP_22  A=0  B=68  C=_  mode=2  flags=0
+--   0046  OP_97  A=6  B=5  C="IsA"  mode=0  flags=4
+--   0047  OP_65  A=8  B="Model"  C=_  mode=1  flags=2
+--   0048  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0049  OP_46  A=6  B=68  C=0  mode=3  flags=0
+--   0050  OP_22  A=0  B=68  C=_  mode=2  flags=0
+--   0051  OP_27  A=6  B=5  C="Name"  mode=0  flags=4
+--   0052  OP_83  A=7  B="tostring"  C=_  mode=1  flags=2
+--   0053  OP_26  A=8  B=2  C=0  mode=0  flags=0
+--   0054  OP_27  A=8  B=8  C="UserId"  mode=0  flags=4
+--   0055  OP_08  A=7  B=2  C=2  mode=0  flags=0
+--   0056  OP_86  A=6  B=68  C=7  mode=3  flags=0
+--   0057  OP_22  A=0  B=68  C=_  mode=2  flags=0
+--   0058  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0059  OP_74  A=6  B=6  C=5  mode=0  flags=0
+--   0060  OP_05  A=6  B=68  C=1  mode=3  flags=0
+--   0061  OP_22  A=0  B=68  C=_  mode=2  flags=0
+--   0062  OP_26  A=6  B=1  C=0  mode=0  flags=0
+--   0063  OP_13  A=7  B=0  C=2  mode=0  flags=0
+--   0064  OP_34  A=7  B="Model"  C=5  mode=0  flags=2
+--   0065  OP_26  A=8  B=3  C=0  mode=0  flags=0
+--   0066  OP_89  A=8  B=1  C=2  mode=0  flags=0
+--   0067  OP_34  A=7  B="Text"  C=8  mode=0  flags=2
+--   0068  OP_102  A=6  B=5  C=7  mode=0  flags=0
+--   0069  OP_50  A=1  B=45  C=2  mode=3  flags=0
+--   0070  OP_22  A=0  B=45  C=_  mode=2  flags=0
+--   0071  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.12: params=0, constants=44, instructions=240, children=0
+-- constants:
+--   [1] "Character"
+--   [2] "FindFirstChild"
+--   [3] "HumanoidRootPart"
+--   [4] "pairs"
+--   [5] "Parent"
+--   [6] "WorldToViewportPoint"
+--   [7] "Position"
+--   [8] "Text"
+--   [9] "Vector2"
+--   [10] "new"
+--   [11] "X"
+--   [12] "Y"
+--   [13] 20
+--   [14] "Magnitude"
+--   [15] "FindFirstAncestorWhichIsA"
+--   [16] "Model"
+--   [17] "configs"
+--   [18] "tornado"
+--   [19] "winds"
+--   [20] "IsA"
+--   [21] "NumberValue"
+--   [22] "Value"
+--   [23] "string"
+--   [24] "format"
+--   [25] "%s (tornado) | %d studs%s"
+--   [26] "Name"
+--   [27] "Unknown"
+--   [28] " | Wind: "
+--   [29] "math"
+--   [30] "floor"
+--   [31] ""
+--   [32] "Visible"
+--   [33] true
+--   [34] false
+--   [35] "TornadoParts"
+--   [36] "Part"
+--   [37] "Cham"
+--   [38] "CFrame"
+--   [39] 1
+--   [40] 1000
+--   [41] "Size"
+--   [42] 2
+--   [43] "GetModelCFrame"
+--   [44] "Probe | ID: %s | %d studs"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_05  A=0  B=13  C=1  mode=3  flags=0
+--   0003  OP_22  A=0  B=13  C=_  mode=2  flags=0
+--   0004  OP_26  A=0  B=1  C=0  mode=0  flags=0
+--   0005  OP_05  A=0  B=13  C=1  mode=3  flags=0
+--   0006  OP_22  A=0  B=13  C=_  mode=2  flags=0
+--   0007  OP_26  A=0  B=2  C=0  mode=0  flags=0
+--   0008  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0009  OP_26  A=0  B=3  C=0  mode=0  flags=0
+--   0010  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0011  OP_13  A=0  B=0  C=0  mode=0  flags=0
+--   0012  OP_107  A=0  B=4  C=0  mode=0  flags=0
+--   0013  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0014  OP_26  A=0  B=5  C=0  mode=0  flags=0
+--   0015  OP_27  A=0  B=0  C="Character"  mode=0  flags=4
+--   0016  OP_46  A=0  B=24  C=0  mode=3  flags=0
+--   0017  OP_22  A=0  B=24  C=_  mode=2  flags=0
+--   0018  OP_26  A=0  B=5  C=0  mode=0  flags=0
+--   0019  OP_27  A=0  B=0  C="Character"  mode=0  flags=4
+--   0020  OP_97  A=0  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0021  OP_65  A=2  B="HumanoidRootPart"  C=_  mode=1  flags=2
+--   0022  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0023  OP_05  A=0  B=25  C=1  mode=3  flags=0
+--   0024  OP_22  A=0  B=25  C=_  mode=2  flags=0
+--   0025  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0026  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0027  OP_46  A=0  B=31  C=0  mode=3  flags=0
+--   0028  OP_22  A=0  B=31  C=_  mode=2  flags=0
+--   0029  OP_26  A=0  B=6  C=0  mode=0  flags=0
+--   0030  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0031  OP_22  A=0  B=35  C=_  mode=2  flags=0
+--   0032  OP_26  A=0  B=2  C=0  mode=0  flags=0
+--   0033  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0034  OP_13  A=0  B=0  C=0  mode=0  flags=0
+--   0035  OP_107  A=0  B=4  C=0  mode=0  flags=0
+--   0036  OP_26  A=0  B=1  C=0  mode=0  flags=0
+--   0037  OP_46  A=0  B=41  C=0  mode=3  flags=0
+--   0038  OP_22  A=0  B=41  C=_  mode=2  flags=0
+--   0039  OP_26  A=0  B=7  C=0  mode=0  flags=0
+--   0040  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0041  OP_22  A=0  B=43  C=_  mode=2  flags=0
+--   0042  OP_26  A=0  B=3  C=0  mode=0  flags=0
+--   0043  OP_07  A=0  B=1  C=1  mode=0  flags=0
+--   0044  OP_26  A=0  B=5  C=0  mode=0  flags=0
+--   0045  OP_27  A=0  B=0  C="Character"  mode=0  flags=4
+--   0046  OP_27  A=0  B=0  C="HumanoidRootPart"  mode=0  flags=4
+--   0047  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0048  OP_46  A=1  B=186  C=0  mode=3  flags=0
+--   0049  OP_22  A=0  B=186  C=_  mode=2  flags=0
+--   0050  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0051  OP_26  A=2  B=8  C=0  mode=0  flags=0
+--   0052  OP_38  A=1  B=2  C=3  mode=0  flags=0
+--   0053  OP_22  A=0  B=184  C=_  mode=2  flags=0
+--   0054  OP_46  A=4  B=184  C=0  mode=3  flags=0
+--   0055  OP_22  A=0  B=184  C=_  mode=2  flags=0
+--   0056  OP_27  A=6  B=4  C="Parent"  mode=0  flags=4
+--   0057  OP_46  A=6  B=184  C=0  mode=3  flags=0
+--   0058  OP_22  A=0  B=184  C=_  mode=2  flags=0
+--   0059  OP_26  A=6  B=9  C=0  mode=0  flags=0
+--   0060  OP_97  A=6  B=6  C="WorldToViewportPoint"  mode=0  flags=4
+--   0061  OP_27  A=8  B=4  C="Position"  mode=0  flags=4
+--   0062  OP_30  A=6  B=8  C=7  mode=0  flags=0
+--   0063  OP_46  A=7  B=133  C=0  mode=3  flags=0
+--   0064  OP_22  A=0  B=133  C=_  mode=2  flags=0
+--   0065  OP_27  A=8  B=5  C="Text"  mode=0  flags=4
+--   0066  OP_83  A=9  B="Vector2"  C=_  mode=1  flags=2
+--   0067  OP_27  A=9  B=9  C="new"  mode=0  flags=4
+--   0068  OP_27  A=10  B=6  C="X"  mode=0  flags=4
+--   0069  OP_27  A=11  B=6  C="Y"  mode=0  flags=4
+--   0070  OP_41  A=11  B=11  C=20  mode=0  flags=4
+--   0071  OP_81  A=9  B=11  C=2  mode=0  flags=0
+--   0072  OP_34  A=8  B="Position"  C=9  mode=0  flags=2
+--   0073  OP_27  A=8  B=0  C="Position"  mode=0  flags=4
+--   0074  OP_27  A=9  B=4  C="Position"  mode=0  flags=4
+--   0075  OP_24  A=8  B=8  C=9  mode=0  flags=0
+--   0076  OP_27  A=8  B=8  C="Magnitude"  mode=0  flags=4
+--   0077  OP_97  A=9  B=4  C="FindFirstAncestorWhichIsA"  mode=0  flags=4
+--   0078  OP_65  A=11  B="Model"  C=_  mode=1  flags=2
+--   0079  OP_81  A=9  B=11  C=2  mode=0  flags=0
+--   0080  OP_97  A=10  B=9  C="FindFirstChild"  mode=0  flags=4
+--   0081  OP_65  A=12  B="configs"  C=_  mode=1  flags=2
+--   0082  OP_81  A=10  B=12  C=2  mode=0  flags=0
+--   0083  OP_46  A=10  B=95  C=0  mode=3  flags=0
+--   0084  OP_22  A=0  B=95  C=_  mode=2  flags=0
+--   0085  OP_27  A=10  B=9  C="configs"  mode=0  flags=4
+--   0086  OP_97  A=10  B=10  C="FindFirstChild"  mode=0  flags=4
+--   0087  OP_65  A=12  B="tornado"  C=_  mode=1  flags=2
+--   0088  OP_81  A=10  B=12  C=2  mode=0  flags=0
+--   0089  OP_46  A=10  B=95  C=0  mode=3  flags=0
+--   0090  OP_22  A=0  B=95  C=_  mode=2  flags=0
+--   0091  OP_27  A=10  B=9  C="configs"  mode=0  flags=4
+--   0092  OP_27  A=10  B=10  C="tornado"  mode=0  flags=4
+--   0093  OP_97  A=10  B=10  C="FindFirstChild"  mode=0  flags=4
+--   0094  OP_65  A=12  B="winds"  C=_  mode=1  flags=2
+--   0095  OP_81  A=10  B=12  C=2  mode=0  flags=0
+--   0096  OP_46  A=10  B=105  C=0  mode=3  flags=0
+--   0097  OP_22  A=0  B=105  C=_  mode=2  flags=0
+--   0098  OP_97  A=11  B=10  C="IsA"  mode=0  flags=4
+--   0099  OP_65  A=13  B="NumberValue"  C=_  mode=1  flags=2
+--   0100  OP_81  A=11  B=13  C=2  mode=0  flags=0
+--   0101  OP_46  A=11  B=105  C=0  mode=3  flags=0
+--   0102  OP_22  A=0  B=105  C=_  mode=2  flags=0
+--   0103  OP_27  A=11  B=10  C="Value"  mode=0  flags=4
+--   0104  OP_05  A=11  B=106  C=1  mode=3  flags=0
+--   0105  OP_22  A=0  B=106  C=_  mode=2  flags=0
+--   0106  OP_36  A=11  B=11  C=0  mode=0  flags=0
+--   0107  OP_27  A=12  B=5  C="Text"  mode=0  flags=4
+--   0108  OP_83  A=13  B="string"  C=_  mode=1  flags=2
+--   0109  OP_27  A=13  B=13  C="format"  mode=0  flags=4
+--   0110  OP_65  A=14  B="%s (tornado) | %d studs%s"  C=_  mode=1  flags=2
+--   0111  OP_46  A=9  B=115  C=0  mode=3  flags=0
+--   0112  OP_22  A=0  B=115  C=_  mode=2  flags=0
+--   0113  OP_27  A=15  B=9  C="Name"  mode=0  flags=4
+--   0114  OP_05  A=15  B=116  C=1  mode=3  flags=0
+--   0115  OP_22  A=0  B=116  C=_  mode=2  flags=0
+--   0116  OP_65  A=15  B="Unknown"  C=_  mode=1  flags=2
+--   0117  OP_47  A=16  B=8  C=0  mode=0  flags=0
+--   0118  OP_46  A=11  B=127  C=0  mode=3  flags=0
+--   0119  OP_22  A=0  B=127  C=_  mode=2  flags=0
+--   0120  OP_65  A=17  B=" | Wind: "  C=_  mode=1  flags=2
+--   0121  OP_83  A=18  B="math"  C=_  mode=1  flags=2
+--   0122  OP_27  A=18  B=18  C="floor"  mode=0  flags=4
+--   0123  OP_47  A=19  B=11  C=0  mode=0  flags=0
+--   0124  OP_08  A=18  B=2  C=2  mode=0  flags=0
+--   0125  OP_21  A=17  B=17  C=18  mode=0  flags=0
+--   0126  OP_05  A=17  B=128  C=1  mode=3  flags=0
+--   0127  OP_22  A=0  B=128  C=_  mode=2  flags=0
+--   0128  OP_65  A=17  B=""  C=_  mode=1  flags=2
+--   0129  OP_81  A=13  B=17  C=2  mode=0  flags=0
+--   0130  OP_34  A=12  B="Text"  C=13  mode=0  flags=2
+--   0131  OP_27  A=12  B=5  C="Text"  mode=0  flags=4
+--   0132  OP_02  A=12  B="Visible"  C=true  mode=0  flags=6
+--   0133  OP_22  A=0  B=135  C=_  mode=2  flags=0
+--   0134  OP_27  A=8  B=5  C="Text"  mode=0  flags=4
+--   0135  OP_02  A=8  B="Visible"  C=false  mode=0  flags=6
+--   0136  OP_83  A=8  B="pairs"  C=_  mode=1  flags=2
+--   0137  OP_27  A=9  B=5  C="TornadoParts"  mode=0  flags=4
+--   0138  OP_38  A=8  B=2  C=10  mode=0  flags=0
+--   0139  OP_22  A=0  B=182  C=_  mode=2  flags=0
+--   0140  OP_27  A=13  B=12  C="Part"  mode=0  flags=4
+--   0141  OP_27  A=14  B=12  C="Cham"  mode=0  flags=4
+--   0142  OP_26  A=15  B=9  C=0  mode=0  flags=0
+--   0143  OP_97  A=15  B=15  C="WorldToViewportPoint"  mode=0  flags=4
+--   0144  OP_27  A=17  B=13  C="Position"  mode=0  flags=4
+--   0145  OP_30  A=15  B=17  C=16  mode=0  flags=0
+--   0146  OP_46  A=16  B=181  C=0  mode=3  flags=0
+--   0147  OP_22  A=0  B=181  C=_  mode=2  flags=0
+--   0148  OP_26  A=17  B=9  C=0  mode=0  flags=0
+--   0149  OP_27  A=17  B=17  C="CFrame"  mode=0  flags=4
+--   0150  OP_27  A=17  B=17  C="Position"  mode=0  flags=4
+--   0151  OP_27  A=18  B=13  C="Position"  mode=0  flags=4
+--   0152  OP_24  A=17  B=17  C=18  mode=0  flags=0
+--   0153  OP_27  A=17  B=17  C="Magnitude"  mode=0  flags=4
+--   0154  OP_76  A=17  B=1  C=17  mode=0  flags=2
+--   0155  OP_32  A=17  B=17  C=1000  mode=0  flags=4
+--   0156  OP_83  A=18  B="Vector2"  C=_  mode=1  flags=2
+--   0157  OP_27  A=18  B=18  C="new"  mode=0  flags=4
+--   0158  OP_27  A=19  B=13  C="Size"  mode=0  flags=4
+--   0159  OP_27  A=19  B=19  C="X"  mode=0  flags=4
+--   0160  OP_105  A=19  B=19  C=17  mode=0  flags=0
+--   0161  OP_27  A=20  B=13  C="Size"  mode=0  flags=4
+--   0162  OP_27  A=20  B=20  C="Y"  mode=0  flags=4
+--   0163  OP_105  A=20  B=20  C=17  mode=0  flags=0
+--   0164  OP_81  A=18  B=20  C=2  mode=0  flags=0
+--   0165  OP_34  A=14  B="Size"  C=18  mode=0  flags=2
+--   0166  OP_83  A=18  B="Vector2"  C=_  mode=1  flags=2
+--   0167  OP_27  A=18  B=18  C="new"  mode=0  flags=4
+--   0168  OP_27  A=19  B=15  C="X"  mode=0  flags=4
+--   0169  OP_27  A=20  B=14  C="Size"  mode=0  flags=4
+--   0170  OP_27  A=20  B=20  C="X"  mode=0  flags=4
+--   0171  OP_49  A=20  B=20  C=2  mode=0  flags=4
+--   0172  OP_24  A=19  B=19  C=20  mode=0  flags=0
+--   0173  OP_27  A=20  B=15  C="Y"  mode=0  flags=4
+--   0174  OP_27  A=21  B=14  C="Size"  mode=0  flags=4
+--   0175  OP_27  A=21  B=21  C="Y"  mode=0  flags=4
+--   0176  OP_49  A=21  B=21  C=2  mode=0  flags=4
+--   0177  OP_24  A=20  B=20  C=21  mode=0  flags=0
+--   0178  OP_81  A=18  B=20  C=2  mode=0  flags=0
+--   0179  OP_34  A=14  B="Position"  C=18  mode=0  flags=2
+--   0180  OP_02  A=14  B="Visible"  C=true  mode=0  flags=6
+--   0181  OP_22  A=0  B=182  C=_  mode=2  flags=0
+--   0182  OP_02  A=14  B="Visible"  C=false  mode=0  flags=6
+--   0183  OP_50  A=8  B=139  C=2  mode=3  flags=0
+--   0184  OP_22  A=0  B=139  C=_  mode=2  flags=0
+--   0185  OP_50  A=1  B=53  C=2  mode=3  flags=0
+--   0186  OP_22  A=0  B=53  C=_  mode=2  flags=0
+--   0187  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0188  OP_46  A=1  B=239  C=0  mode=3  flags=0
+--   0189  OP_22  A=0  B=239  C=_  mode=2  flags=0
+--   0190  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0191  OP_26  A=2  B=10  C=0  mode=0  flags=0
+--   0192  OP_38  A=1  B=2  C=3  mode=0  flags=0
+--   0193  OP_22  A=0  B=237  C=_  mode=2  flags=0
+--   0194  OP_46  A=4  B=235  C=0  mode=3  flags=0
+--   0195  OP_22  A=0  B=235  C=_  mode=2  flags=0
+--   0196  OP_27  A=6  B=4  C="Parent"  mode=0  flags=4
+--   0197  OP_46  A=6  B=235  C=0  mode=3  flags=0
+--   0198  OP_22  A=0  B=235  C=_  mode=2  flags=0
+--   0199  OP_97  A=6  B=4  C="GetModelCFrame"  mode=0  flags=4
+--   0200  OP_08  A=6  B=2  C=2  mode=0  flags=0
+--   0201  OP_26  A=7  B=9  C=0  mode=0  flags=0
+--   0202  OP_97  A=7  B=7  C="WorldToViewportPoint"  mode=0  flags=4
+--   0203  OP_27  A=9  B=6  C="Position"  mode=0  flags=4
+--   0204  OP_30  A=7  B=9  C=8  mode=0  flags=0
+--   0205  OP_46  A=8  B=232  C=0  mode=3  flags=0
+--   0206  OP_22  A=0  B=232  C=_  mode=2  flags=0
+--   0207  OP_27  A=9  B=5  C="Text"  mode=0  flags=4
+--   0208  OP_83  A=10  B="Vector2"  C=_  mode=1  flags=2
+--   0209  OP_27  A=10  B=10  C="new"  mode=0  flags=4
+--   0210  OP_27  A=11  B=7  C="X"  mode=0  flags=4
+--   0211  OP_27  A=12  B=7  C="Y"  mode=0  flags=4
+--   0212  OP_41  A=12  B=12  C=20  mode=0  flags=4
+--   0213  OP_81  A=10  B=12  C=2  mode=0  flags=0
+--   0214  OP_34  A=9  B="Position"  C=10  mode=0  flags=2
+--   0215  OP_27  A=9  B=0  C="Position"  mode=0  flags=4
+--   0216  OP_27  A=10  B=6  C="Position"  mode=0  flags=4
+--   0217  OP_24  A=9  B=9  C=10  mode=0  flags=0
+--   0218  OP_27  A=9  B=9  C="Magnitude"  mode=0  flags=4
+--   0219  OP_27  A=10  B=5  C="Text"  mode=0  flags=4
+--   0220  OP_83  A=11  B="string"  C=_  mode=1  flags=2
+--   0221  OP_27  A=11  B=11  C="format"  mode=0  flags=4
+--   0222  OP_65  A=12  B="Probe | ID: %s | %d studs"  C=_  mode=1  flags=2
+--   0223  OP_27  A=13  B=4  C="Name"  mode=0  flags=4
+--   0224  OP_83  A=14  B="math"  C=_  mode=1  flags=2
+--   0225  OP_27  A=14  B=14  C="floor"  mode=0  flags=4
+--   0226  OP_47  A=15  B=9  C=0  mode=0  flags=0
+--   0227  OP_17  A=14  B=15  C=0  mode=0  flags=0
+--   0228  OP_10  A=11  B=0  C=2  mode=0  flags=0
+--   0229  OP_34  A=10  B="Text"  C=11  mode=0  flags=2
+--   0230  OP_27  A=10  B=5  C="Text"  mode=0  flags=4
+--   0231  OP_02  A=10  B="Visible"  C=true  mode=0  flags=6
+--   0232  OP_22  A=0  B=237  C=_  mode=2  flags=0
+--   0233  OP_27  A=9  B=5  C="Text"  mode=0  flags=4
+--   0234  OP_02  A=9  B="Visible"  C=false  mode=0  flags=6
+--   0235  OP_22  A=0  B=237  C=_  mode=2  flags=0
+--   0236  OP_27  A=6  B=5  C="Text"  mode=0  flags=4
+--   0237  OP_02  A=6  B="Visible"  C=false  mode=0  flags=6
+--   0238  OP_50  A=1  B=193  C=2  mode=3  flags=0
+--   0239  OP_22  A=0  B=193  C=_  mode=2  flags=0
+--   0240  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.13: params=1, constants=0, instructions=2, children=0
+-- instructions:
+--   0001  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.14: params=0, constants=15, instructions=75, children=1
+-- constants:
+--   [1] "Character"
+--   [2] "FindFirstChild"
+--   [3] "HumanoidRootPart"
+--   [4] "Instance"
+--   [5] "new"
+--   [6] "BodyVelocity"
+--   [7] "MaxForce"
+--   [8] "Vector3"
+--   [9] 8999999488
+--   [10] "BodyGyro"
+--   [11] "MaxTorque"
+--   [12] "RenderStepped"
+--   [13] "Connect"
+--   [14] "Disconnect"
+--   [15] "Destroy"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_16  A=0  B=0  C=0  mode=0  flags=0
+--   0003  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0004  OP_26  A=0  B=1  C=0  mode=0  flags=0
+--   0005  OP_27  A=0  B=0  C="Character"  mode=0  flags=4
+--   0006  OP_98  A=1  B=10  C=0  mode=3  flags=0
+--   0007  OP_22  A=0  B=10  C=_  mode=2  flags=0
+--   0008  OP_97  A=1  B=0  C="FindFirstChild"  mode=0  flags=4
+--   0009  OP_65  A=3  B="HumanoidRootPart"  C=_  mode=1  flags=2
+--   0010  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0011  OP_05  A=1  B=13  C=1  mode=3  flags=0
+--   0012  OP_22  A=0  B=13  C=_  mode=2  flags=0
+--   0013  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0014  OP_26  A=2  B=0  C=0  mode=0  flags=0
+--   0015  OP_46  A=2  B=56  C=0  mode=3  flags=0
+--   0016  OP_22  A=0  B=56  C=_  mode=2  flags=0
+--   0017  OP_83  A=2  B="Instance"  C=_  mode=1  flags=2
+--   0018  OP_27  A=2  B=2  C="new"  mode=0  flags=4
+--   0019  OP_65  A=3  B="BodyVelocity"  C=_  mode=1  flags=2
+--   0020  OP_47  A=4  B=1  C=0  mode=0  flags=0
+--   0021  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0022  OP_107  A=2  B=2  C=0  mode=0  flags=0
+--   0023  OP_26  A=2  B=2  C=0  mode=0  flags=0
+--   0024  OP_83  A=3  B="Vector3"  C=_  mode=1  flags=2
+--   0025  OP_27  A=3  B=3  C="new"  mode=0  flags=4
+--   0026  OP_65  A=4  B=8999999488  C=_  mode=1  flags=2
+--   0027  OP_65  A=5  B=8999999488  C=_  mode=1  flags=2
+--   0028  OP_65  A=6  B=8999999488  C=_  mode=1  flags=2
+--   0029  OP_81  A=3  B=6  C=2  mode=0  flags=0
+--   0030  OP_34  A=2  B="MaxForce"  C=3  mode=0  flags=2
+--   0031  OP_83  A=2  B="Instance"  C=_  mode=1  flags=2
+--   0032  OP_27  A=2  B=2  C="new"  mode=0  flags=4
+--   0033  OP_65  A=3  B="BodyGyro"  C=_  mode=1  flags=2
+--   0034  OP_47  A=4  B=1  C=0  mode=0  flags=0
+--   0035  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0036  OP_107  A=2  B=3  C=0  mode=0  flags=0
+--   0037  OP_26  A=2  B=3  C=0  mode=0  flags=0
+--   0038  OP_83  A=3  B="Vector3"  C=_  mode=1  flags=2
+--   0039  OP_27  A=3  B=3  C="new"  mode=0  flags=4
+--   0040  OP_65  A=4  B=8999999488  C=_  mode=1  flags=2
+--   0041  OP_65  A=5  B=8999999488  C=_  mode=1  flags=2
+--   0042  OP_65  A=6  B=8999999488  C=_  mode=1  flags=2
+--   0043  OP_81  A=3  B=6  C=2  mode=0  flags=0
+--   0044  OP_34  A=2  B="MaxTorque"  C=3  mode=0  flags=2
+--   0045  OP_26  A=2  B=5  C=0  mode=0  flags=0
+--   0046  OP_27  A=2  B=2  C="RenderStepped"  mode=0  flags=4
+--   0047  OP_97  A=2  B=2  C="Connect"  mode=0  flags=4
+--   0048  OP_09  A=4  B=0  C=5  mode=3  flags=0
+--   0049  OP_72  A=0  B=6  C=0  mode=0  flags=0
+--   0050  OP_72  A=0  B=7  C=0  mode=0  flags=0
+--   0051  OP_72  A=0  B=2  C=0  mode=0  flags=0
+--   0052  OP_72  A=0  B=8  C=0  mode=0  flags=0
+--   0053  OP_72  A=0  B=3  C=0  mode=0  flags=0
+--   0054  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0055  OP_107  A=2  B=4  C=0  mode=0  flags=0
+--   0056  OP_22  A=0  B=74  C=_  mode=2  flags=0
+--   0057  OP_26  A=2  B=4  C=0  mode=0  flags=0
+--   0058  OP_46  A=2  B=62  C=0  mode=3  flags=0
+--   0059  OP_22  A=0  B=62  C=_  mode=2  flags=0
+--   0060  OP_26  A=2  B=4  C=0  mode=0  flags=0
+--   0061  OP_97  A=2  B=2  C="Disconnect"  mode=0  flags=4
+--   0062  OP_52  A=2  B=2  C=1  mode=0  flags=0
+--   0063  OP_26  A=2  B=2  C=0  mode=0  flags=0
+--   0064  OP_46  A=2  B=68  C=0  mode=3  flags=0
+--   0065  OP_22  A=0  B=68  C=_  mode=2  flags=0
+--   0066  OP_26  A=2  B=2  C=0  mode=0  flags=0
+--   0067  OP_97  A=2  B=2  C="Destroy"  mode=0  flags=4
+--   0068  OP_52  A=2  B=2  C=1  mode=0  flags=0
+--   0069  OP_26  A=2  B=3  C=0  mode=0  flags=0
+--   0070  OP_46  A=2  B=74  C=0  mode=3  flags=0
+--   0071  OP_22  A=0  B=74  C=_  mode=2  flags=0
+--   0072  OP_26  A=2  B=3  C=0  mode=0  flags=0
+--   0073  OP_97  A=2  B=2  C="Destroy"  mode=0  flags=4
+--   0074  OP_52  A=2  B=2  C=1  mode=0  flags=0
+--   0075  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.14.0: params=0, constants=19, instructions=89, children=0
+-- constants:
+--   [1] "Vector3"
+--   [2] "zero"
+--   [3] "IsKeyDown"
+--   [4] "Enum"
+--   [5] "KeyCode"
+--   [6] "W"
+--   [7] "CFrame"
+--   [8] "LookVector"
+--   [9] "S"
+--   [10] "A"
+--   [11] "RightVector"
+--   [12] "D"
+--   [13] "Space"
+--   [14] "yAxis"
+--   [15] "LeftControl"
+--   [16] "Velocity"
+--   [17] "Magnitude"
+--   [18] 0
+--   [19] "Unit"
+-- instructions:
+--   0001  OP_83  A=0  B="Vector3"  C=_  mode=1  flags=2
+--   0002  OP_27  A=0  B=0  C="zero"  mode=0  flags=4
+--   0003  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0004  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0005  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0006  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0007  OP_27  A=3  B=3  C="W"  mode=0  flags=4
+--   0008  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0009  OP_46  A=1  B=14  C=0  mode=3  flags=0
+--   0010  OP_22  A=0  B=14  C=_  mode=2  flags=0
+--   0011  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0012  OP_27  A=1  B=1  C="CFrame"  mode=0  flags=4
+--   0013  OP_27  A=1  B=1  C="LookVector"  mode=0  flags=4
+--   0014  OP_78  A=0  B=0  C=1  mode=0  flags=0
+--   0015  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0016  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0017  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0018  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0019  OP_27  A=3  B=3  C="S"  mode=0  flags=4
+--   0020  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0021  OP_46  A=1  B=26  C=0  mode=3  flags=0
+--   0022  OP_22  A=0  B=26  C=_  mode=2  flags=0
+--   0023  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0024  OP_27  A=1  B=1  C="CFrame"  mode=0  flags=4
+--   0025  OP_27  A=1  B=1  C="LookVector"  mode=0  flags=4
+--   0026  OP_24  A=0  B=0  C=1  mode=0  flags=0
+--   0027  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0028  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0029  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0030  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0031  OP_27  A=3  B=3  C="A"  mode=0  flags=4
+--   0032  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0033  OP_46  A=1  B=38  C=0  mode=3  flags=0
+--   0034  OP_22  A=0  B=38  C=_  mode=2  flags=0
+--   0035  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0036  OP_27  A=1  B=1  C="CFrame"  mode=0  flags=4
+--   0037  OP_27  A=1  B=1  C="RightVector"  mode=0  flags=4
+--   0038  OP_24  A=0  B=0  C=1  mode=0  flags=0
+--   0039  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0040  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0041  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0042  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0043  OP_27  A=3  B=3  C="D"  mode=0  flags=4
+--   0044  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0045  OP_46  A=1  B=50  C=0  mode=3  flags=0
+--   0046  OP_22  A=0  B=50  C=_  mode=2  flags=0
+--   0047  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0048  OP_27  A=1  B=1  C="CFrame"  mode=0  flags=4
+--   0049  OP_27  A=1  B=1  C="RightVector"  mode=0  flags=4
+--   0050  OP_78  A=0  B=0  C=1  mode=0  flags=0
+--   0051  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0052  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0053  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0054  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0055  OP_27  A=3  B=3  C="Space"  mode=0  flags=4
+--   0056  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0057  OP_46  A=1  B=61  C=0  mode=3  flags=0
+--   0058  OP_22  A=0  B=61  C=_  mode=2  flags=0
+--   0059  OP_83  A=1  B="Vector3"  C=_  mode=1  flags=2
+--   0060  OP_27  A=1  B=1  C="yAxis"  mode=0  flags=4
+--   0061  OP_78  A=0  B=0  C=1  mode=0  flags=0
+--   0062  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0063  OP_97  A=1  B=1  C="IsKeyDown"  mode=0  flags=4
+--   0064  OP_83  A=3  B="Enum"  C=_  mode=1  flags=2
+--   0065  OP_27  A=3  B=3  C="KeyCode"  mode=0  flags=4
+--   0066  OP_27  A=3  B=3  C="LeftControl"  mode=0  flags=4
+--   0067  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0068  OP_46  A=1  B=72  C=0  mode=3  flags=0
+--   0069  OP_22  A=0  B=72  C=_  mode=2  flags=0
+--   0070  OP_83  A=1  B="Vector3"  C=_  mode=1  flags=2
+--   0071  OP_27  A=1  B=1  C="yAxis"  mode=0  flags=4
+--   0072  OP_24  A=0  B=0  C=1  mode=0  flags=0
+--   0073  OP_26  A=1  B=2  C=0  mode=0  flags=0
+--   0074  OP_27  A=2  B=0  C="Magnitude"  mode=0  flags=4
+--   0075  OP_59  A=0  B=81  C=2  mode=3  flags=1
+--   0076  OP_22  A=0  B=81  C=_  mode=2  flags=0
+--   0077  OP_27  A=2  B=0  C="Unit"  mode=0  flags=4
+--   0078  OP_26  A=3  B=3  C=0  mode=0  flags=0
+--   0079  OP_105  A=2  B=2  C=3  mode=0  flags=0
+--   0080  OP_05  A=2  B=83  C=1  mode=3  flags=0
+--   0081  OP_22  A=0  B=83  C=_  mode=2  flags=0
+--   0082  OP_83  A=2  B="Vector3"  C=_  mode=1  flags=2
+--   0083  OP_27  A=2  B=2  C="zero"  mode=0  flags=4
+--   0084  OP_34  A=1  B="Velocity"  C=2  mode=0  flags=2
+--   0085  OP_26  A=1  B=4  C=0  mode=0  flags=0
+--   0086  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0087  OP_27  A=2  B=2  C="CFrame"  mode=0  flags=4
+--   0088  OP_34  A=1  B="CFrame"  C=2  mode=0  flags=2
+--   0089  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.15: params=1, constants=3, instructions=20, children=1
+-- constants:
+--   [1] "Disconnect"
+--   [2] "RenderStepped"
+--   [3] "Connect"
+-- instructions:
+--   0001  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0003  OP_46  A=1  B=9  C=0  mode=3  flags=0
+--   0004  OP_22  A=0  B=9  C=_  mode=2  flags=0
+--   0005  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0006  OP_97  A=1  B=1  C="Disconnect"  mode=0  flags=4
+--   0007  OP_52  A=1  B=2  C=1  mode=0  flags=0
+--   0008  OP_36  A=1  B=1  C=0  mode=0  flags=0
+--   0009  OP_107  A=1  B=1  C=0  mode=0  flags=0
+--   0010  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0011  OP_46  A=1  B=19  C=0  mode=3  flags=0
+--   0012  OP_22  A=0  B=19  C=_  mode=2  flags=0
+--   0013  OP_26  A=1  B=2  C=0  mode=0  flags=0
+--   0014  OP_27  A=1  B=1  C="RenderStepped"  mode=0  flags=4
+--   0015  OP_97  A=1  B=1  C="Connect"  mode=0  flags=4
+--   0016  OP_09  A=3  B=0  C=1  mode=3  flags=0
+--   0017  OP_72  A=0  B=3  C=0  mode=0  flags=0
+--   0018  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0019  OP_107  A=1  B=1  C=0  mode=0  flags=0
+--   0020  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.15.0: params=0, constants=12, instructions=17, children=0
+-- constants:
+--   [1] "Brightness"
+--   [2] 2
+--   [3] "ClockTime"
+--   [4] 14
+--   [5] "FogEnd"
+--   [6] 100000
+--   [7] "GlobalShadows"
+--   [8] false
+--   [9] "OutdoorAmbient"
+--   [10] "Color3"
+--   [11] "fromRGB"
+--   [12] 128
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_02  A=0  B="Brightness"  C=2  mode=0  flags=6
+--   0003  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0004  OP_02  A=0  B="ClockTime"  C=14  mode=0  flags=6
+--   0005  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0006  OP_02  A=0  B="FogEnd"  C=100000  mode=0  flags=6
+--   0007  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0008  OP_02  A=0  B="GlobalShadows"  C=false  mode=0  flags=6
+--   0009  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0010  OP_83  A=1  B="Color3"  C=_  mode=1  flags=2
+--   0011  OP_27  A=1  B=1  C="fromRGB"  mode=0  flags=4
+--   0012  OP_65  A=2  B=128  C=_  mode=1  flags=2
+--   0013  OP_65  A=3  B=128  C=_  mode=1  flags=2
+--   0014  OP_65  A=4  B=128  C=_  mode=1  flags=2
+--   0015  OP_81  A=1  B=4  C=2  mode=0  flags=0
+--   0016  OP_34  A=0  B="OutdoorAmbient"  C=1  mode=0  flags=2
+--   0017  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.16: params=0, constants=11, instructions=37, children=0
+-- constants:
+--   [1] "pairs"
+--   [2] "GetChildren"
+--   [3] "IsA"
+--   [4] "Model"
+--   [5] "FindFirstChild"
+--   [6] "rotation"
+--   [7] "configs"
+--   [8] "tornado"
+--   [9] "table"
+--   [10] "insert"
+--   [11] "Name"
+-- instructions:
+--   0001  OP_13  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_83  A=1  B="pairs"  C=_  mode=1  flags=2
+--   0003  OP_26  A=2  B=0  C=0  mode=0  flags=0
+--   0004  OP_97  A=2  B=2  C="GetChildren"  mode=0  flags=4
+--   0005  OP_17  A=2  B=3  C=0  mode=0  flags=0
+--   0006  OP_20  A=1  B=0  C=3  mode=0  flags=0
+--   0007  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0008  OP_97  A=6  B=5  C="IsA"  mode=0  flags=4
+--   0009  OP_65  A=8  B="Model"  C=_  mode=1  flags=2
+--   0010  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0011  OP_46  A=6  B=33  C=0  mode=3  flags=0
+--   0012  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0013  OP_97  A=6  B=5  C="FindFirstChild"  mode=0  flags=4
+--   0014  OP_65  A=8  B="rotation"  C=_  mode=1  flags=2
+--   0015  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0016  OP_46  A=6  B=33  C=0  mode=3  flags=0
+--   0017  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0018  OP_97  A=6  B=5  C="FindFirstChild"  mode=0  flags=4
+--   0019  OP_65  A=8  B="configs"  C=_  mode=1  flags=2
+--   0020  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0021  OP_46  A=6  B=33  C=0  mode=3  flags=0
+--   0022  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0023  OP_27  A=6  B=5  C="configs"  mode=0  flags=4
+--   0024  OP_97  A=6  B=6  C="FindFirstChild"  mode=0  flags=4
+--   0025  OP_65  A=8  B="tornado"  C=_  mode=1  flags=2
+--   0026  OP_81  A=6  B=8  C=2  mode=0  flags=0
+--   0027  OP_46  A=6  B=33  C=0  mode=3  flags=0
+--   0028  OP_22  A=0  B=33  C=_  mode=2  flags=0
+--   0029  OP_83  A=6  B="table"  C=_  mode=1  flags=2
+--   0030  OP_27  A=6  B=6  C="insert"  mode=0  flags=4
+--   0031  OP_47  A=7  B=0  C=0  mode=0  flags=0
+--   0032  OP_27  A=8  B=5  C="Name"  mode=0  flags=4
+--   0033  OP_91  A=6  B=8  C=1  mode=0  flags=0
+--   0034  OP_50  A=1  B=7  C=2  mode=3  flags=0
+--   0035  OP_22  A=0  B=7  C=_  mode=2  flags=0
+--   0036  OP_11  A=0  B=2  C=0  mode=0  flags=0
+--   0037  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.17: params=1, constants=14, instructions=45, children=0
+-- constants:
+--   [1] "typeof"
+--   [2] "table"
+--   [3] 1
+--   [4] "FindFirstChild"
+--   [5] "rotation"
+--   [6] "FindFirstChildWhichIsA"
+--   [7] "BasePart"
+--   [8] "Character"
+--   [9] "HumanoidRootPart"
+--   [10] "CFrame"
+--   [11] "Vector3"
+--   [12] "new"
+--   [13] 0
+--   [14] 5
+-- instructions:
+--   0001  OP_83  A=1  B="typeof"  C=_  mode=1  flags=2
+--   0002  OP_47  A=2  B=0  C=0  mode=0  flags=0
+--   0003  OP_08  A=1  B=2  C=2  mode=0  flags=0
+--   0004  OP_104  A=1  B=6  C="table"  mode=3  flags=4
+--   0005  OP_22  A=0  B=6  C=_  mode=2  flags=0
+--   0006  OP_27  A=0  B=0  C=1  mode=0  flags=4
+--   0007  OP_26  A=1  B=0  C=0  mode=0  flags=0
+--   0008  OP_97  A=1  B=1  C="FindFirstChild"  mode=0  flags=4
+--   0009  OP_47  A=3  B=0  C=0  mode=0  flags=0
+--   0010  OP_81  A=1  B=3  C=2  mode=0  flags=0
+--   0011  OP_05  A=1  B=13  C=1  mode=3  flags=0
+--   0012  OP_22  A=0  B=13  C=_  mode=2  flags=0
+--   0013  OP_111  A=0  B=1  C=0  mode=0  flags=0
+--   0014  OP_97  A=2  B=1  C="FindFirstChild"  mode=0  flags=4
+--   0015  OP_65  A=4  B="rotation"  C=_  mode=1  flags=2
+--   0016  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0017  OP_46  A=2  B=22  C=0  mode=3  flags=0
+--   0018  OP_22  A=0  B=22  C=_  mode=2  flags=0
+--   0019  OP_27  A=2  B=1  C="rotation"  mode=0  flags=4
+--   0020  OP_97  A=2  B=2  C="FindFirstChildWhichIsA"  mode=0  flags=4
+--   0021  OP_65  A=4  B="BasePart"  C=_  mode=1  flags=2
+--   0022  OP_81  A=2  B=4  C=2  mode=0  flags=0
+--   0023  OP_26  A=3  B=1  C=0  mode=0  flags=0
+--   0024  OP_27  A=3  B=3  C="Character"  mode=0  flags=4
+--   0025  OP_46  A=3  B=31  C=0  mode=3  flags=0
+--   0026  OP_22  A=0  B=31  C=_  mode=2  flags=0
+--   0027  OP_26  A=3  B=1  C=0  mode=0  flags=0
+--   0028  OP_27  A=3  B=3  C="Character"  mode=0  flags=4
+--   0029  OP_97  A=3  B=3  C="FindFirstChild"  mode=0  flags=4
+--   0030  OP_65  A=5  B="HumanoidRootPart"  C=_  mode=1  flags=2
+--   0031  OP_81  A=3  B=5  C=2  mode=0  flags=0
+--   0032  OP_46  A=2  B=44  C=0  mode=3  flags=0
+--   0033  OP_22  A=0  B=44  C=_  mode=2  flags=0
+--   0034  OP_46  A=3  B=44  C=0  mode=3  flags=0
+--   0035  OP_22  A=0  B=44  C=_  mode=2  flags=0
+--   0036  OP_27  A=4  B=2  C="CFrame"  mode=0  flags=4
+--   0037  OP_83  A=5  B="Vector3"  C=_  mode=1  flags=2
+--   0038  OP_27  A=5  B=5  C="new"  mode=0  flags=4
+--   0039  OP_65  A=6  B=0  C=_  mode=1  flags=2
+--   0040  OP_65  A=7  B=5  C=_  mode=1  flags=2
+--   0041  OP_65  A=8  B=0  C=_  mode=1  flags=2
+--   0042  OP_81  A=5  B=8  C=2  mode=0  flags=0
+--   0043  OP_78  A=4  B=4  C=5  mode=0  flags=0
+--   0044  OP_34  A=3  B="CFrame"  C=4  mode=0  flags=2
+--   0045  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.18: params=0, constants=1, instructions=6, children=0
+-- constants:
+--   [1] "Refresh"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=0  B=0  C="Refresh"  mode=0  flags=4
+--   0003  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0004  OP_45  A=2  B=1  C=0  mode=0  flags=0
+--   0005  OP_70  A=0  B=0  C=1  mode=0  flags=0
+--   0006  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.19: params=0, constants=1, instructions=6, children=0
+-- constants:
+--   [1] "Refresh"
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=0  B=0  C="Refresh"  mode=0  flags=4
+--   0003  OP_26  A=2  B=1  C=0  mode=0  flags=0
+--   0004  OP_45  A=2  B=1  C=0  mode=0  flags=0
+--   0005  OP_70  A=0  B=0  C=1  mode=0  flags=0
+--   0006  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.20: params=0, constants=7, instructions=17, children=0
+-- constants:
+--   [1] "WaitForChild"
+--   [2] "events"
+--   [3] "spawn_vehicle"
+--   [4] "FireServer"
+--   [5] "92454SS"
+--   [6] "warn"
+--   [7] "Evento de spawn n\195\163o encontrado."
+-- instructions:
+--   0001  OP_26  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_97  A=0  B=0  C="WaitForChild"  mode=0  flags=4
+--   0003  OP_65  A=2  B="events"  C=_  mode=1  flags=2
+--   0004  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0005  OP_97  A=0  B=0  C="WaitForChild"  mode=0  flags=4
+--   0006  OP_65  A=2  B="spawn_vehicle"  C=_  mode=1  flags=2
+--   0007  OP_81  A=0  B=2  C=2  mode=0  flags=0
+--   0008  OP_46  A=0  B=13  C=0  mode=3  flags=0
+--   0009  OP_22  A=0  B=13  C=_  mode=2  flags=0
+--   0010  OP_97  A=1  B=0  C="FireServer"  mode=0  flags=4
+--   0011  OP_65  A=3  B="92454SS"  C=_  mode=1  flags=2
+--   0012  OP_91  A=1  B=3  C=1  mode=0  flags=0
+--   0013  OP_22  A=0  B=16  C=_  mode=2  flags=0
+--   0014  OP_83  A=1  B="warn"  C=_  mode=1  flags=2
+--   0015  OP_65  A=2  B="Evento de spawn n\195\163o encontrado."  C=_  mode=1  flags=2
+--   0016  OP_52  A=1  B=2  C=1  mode=0  flags=0
+--   0017  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.21: params=1, constants=0, instructions=8, children=0
+-- instructions:
+--   0001  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_05  A=0  B=7  C=1  mode=3  flags=0
+--   0003  OP_22  A=0  B=7  C=_  mode=2  flags=0
+--   0004  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0005  OP_07  A=1  B=1  C=1  mode=0  flags=0
+--   0006  OP_13  A=1  B=0  C=0  mode=0  flags=0
+--   0007  OP_107  A=1  B=2  C=0  mode=0  flags=0
+--   0008  OP_111  A=0  B=1  C=0  mode=0  flags=0
+-- proto 0.22: params=1, constants=0, instructions=6, children=0
+-- instructions:
+--   0001  OP_107  A=0  B=0  C=0  mode=0  flags=0
+--   0002  OP_05  A=0  B=5  C=1  mode=3  flags=0
+--   0003  OP_22  A=0  B=5  C=_  mode=2  flags=0
+--   0004  OP_26  A=1  B=1  C=0  mode=0  flags=0
+--   0005  OP_07  A=1  B=1  C=1  mode=0  flags=0
+--   0006  OP_111  A=0  B=1  C=0  mode=0  flags=0
+
