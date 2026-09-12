@@ -1,0 +1,1 @@
+export default (i,c) => { const operator=c.binaryOperator(i); if(!operator) throw new Error(`Unknown binary selector at pc ${i.pc}`); return c.base(i,'binary',{dst:i.dest,operator,left:c.value(i.op1),right:c.value(i.op2)}); };

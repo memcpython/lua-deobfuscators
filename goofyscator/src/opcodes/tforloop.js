@@ -1,0 +1,1 @@
+export default (i,c) => { let a=c.signed(i.extra,0,i.dest+2); let b=c.signed(i.extra,a.next,i.dest+3); return c.base(i,'tforloop',{base:i.dest,resultCount:i.op1?.value??0,target:i.op2?.value??0,control:a.value,resultBase:b.value}); };

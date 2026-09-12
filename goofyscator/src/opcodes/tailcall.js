@@ -1,0 +1,1 @@
+export default (i,c) => { const prefix=c.signed(i.extra,0,-1); const line=c.uleb(i.extra,prefix.next,0); return c.base(i,'tailcall',{base:i.dest,argCount:i.op1?.value??0,openPrefix:prefix.value,sourceLine:line.value}); };
