@@ -1,0 +1,21 @@
+{
+  "name": "goofyfuscator-v10-devirtualizer",
+  "version": "0.13.0",
+  "private": true,
+  "type": "module",
+  "description": "Polymorphic Goofyfuscator V10 VM devirtualizer with static data-flow and structured Lua source recovery",
+  "bin": {
+    "goofy-deobf": "./src/cli.js"
+  },
+  "scripts": {
+    "check": "node src/test/syntax.js && node src/test/unit.js && node src/test/emitter-contract.js",
+    "test:unit": "node src/test/unit.js",
+    "test:regression": "node src/test/regression.js",
+    "test": "node src/test/syntax.js && node src/test/unit.js && node src/test/emitter-contract.js && node src/test/regression.js",
+    "test:open-calls": "node src/test/open-calls.js",
+    "test:emitter-contract": "node src/test/emitter-contract.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,1 @@
+# Goofyscator deobfuscator made by the all mighty LSD
