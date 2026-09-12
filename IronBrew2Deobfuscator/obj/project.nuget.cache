@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GJzAKvUyqDY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asdf\\Desktop\\obfusactors\\OBSCURA\\agartha-stuff\\bot\\deobf-work\\ib2\\ib2\\IronBrew2Deobfuscator\\IronBrew2Deobfuscator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asdf\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\asdf\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0-preview.18571.3\\system.runtime.compilerservices.unsafe.4.6.0-preview.18571.3.nupkg.sha512",
+    "C:\\Users\\asdf\\.nuget\\packages\\system.text.encoding.codepages\\4.6.0-preview.18571.3\\system.text.encoding.codepages.4.6.0-preview.18571.3.nupkg.sha512"
+  ],
+  "logs": []
+}
